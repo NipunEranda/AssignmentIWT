@@ -1,0 +1,116 @@
+.frame
+{
+    margin-left: 17%;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    line-height: 30px;
+    font-size: 15px;
+    width: 60%;
+    float: left;
+    padding: 100px 50px 0px 0px;
+    background: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.store_form_middle label{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.store_form_left label{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.frame .topic_form{
+    font-size: 70px;
+    font-weight: bold; 
+}
+
+#store_form{
+    padding: 0px 0px 0px 150px;
+    margin-top:100px; 
+    height: 500px;
+}
+
+.store_form_left{
+    margin-left: 2%;
+    line-height: 45px;
+    width: 20%;
+}
+
+.store_form_middle{
+    line-height: 45px;
+    width: 20%;
+}
+
+.store_form_right{
+    width: 50%;
+}
+
+.store_form_right input[type = "text"]{
+    float: right;
+    margin-left: 20px;
+    margin-right: 14%;
+    width: 60%;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.store_form_right input[type = "email"]{
+    float: right;
+    margin-left: 20px;
+    margin-right: 14%;
+    width: 60%;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+#store_form input[type = "submit"]{
+    width: 150px;
+    height: 50px;
+    float: right;
+    margin-left: 210px;
+    margin-right: 15%;
+    margin-top: 10px;
+}
+
+.store_form_middle select{
+    float: right;
+    height: 30px;
+    width: 100px;
+}
+
+.store_form_middle label{
+    float: right;
+}
+
+.frmInput
+{
+    margin: auto;
+    padding: 5px;
+    width: 610px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.frmButton
+{
+    margin: auto;
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 50px;
+    border-color: black;
+}
+.frmButton:hover
+{
+    background-color: gray;
+    border-width: 0px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shipping Schedule</title>
+        <link rel = "stylesheet" href = "css/styles.css">
+        <link rel = "stylesheet" href = "css/shippingSchedule.css">
+        <script src = "js/shippingSchedule.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <ul class = "heading_ul">
+            <li id = "header_li"><a class = "active" href = "index.html">Home</a></li>
+            <li id = "header_li"><a href = "aboutUs.html">About Us</a></li>
+            <li id = "header_li"><a href = "contactUs.html">Contact Us</a></li>
+            <li id = "header_li"><a href = "feedBack.html">Rate Us</a></li>
+            <li id = "header_li"><a href = "myAccount.html">My Account</a></li>
+        </ul>
+
+
+        <div class = "header1">
+            <img src = "images/ico4.png" width = "200px" height = "200px" alt = "icon" style = "padding: 5px 0px 0px 5px;">
+            <b class = "topic">GIFT BAY</b>
+            <table style = "float : right; padding : 50px 3px">
+                <tr><td>My cart &nbsp;&nbsp;&nbsp;</td></tr>
+                <tr><td>0 items</td></tr>
+            </table>
+            <img class = "cart" src = "images/cart_white.png" width = "100" height = "80" alt = "cart_image">
+        </div>
+        <div class="navbar">
+            <div class = "dropDown">
+                <button class = "dropDownbtn">All Categories</button>
+                <div class = "dropDown-content">
+                    <a href = "">Gift Baskets</a>
+                    <a href = "">Gift For Her</a>
+                    <a href = "">Gift For Him</a>
+                    <a href = "">Books</a>
+                    <a href = "">Chocolates</a>
+                    <a href = "">Electronics</a>
+                    <a href = "">Perfume</a>
+                    <a href = "">Gift Vouchers</a>
+                    <a href = "">Teddy bears</a>
+                    <a href = "">Clothes</a>
+                    <a href = "">Jewelry</a>
+                    <a href = "">Fathers Day Gifts</a>
+                    <a href = "">Cakes</a>
+                </div>
+            </div>
+            <div class = "right position">
+                <input class="search" type = "text" placeholder="Search..">
+            </div>
+        </div>
+        <div id="maincontainer">
+            <!--BODY STARTS-->
+
+            <div id = "container">
+                <label><h1><center>Shipping Schedule Solutions</center></h1></label><br/><br/>
+                <form>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'schedule')" id="defaultOpen">Schedule</button>
+                    <button class="tablinks" onclick="openCity(event, 'vessel')">Vessel</button>
+                    <button class="tablinks" onclick="openCity(event, 'ports')">Ports</button>
+                    <button class="tablinks" onclick="openCity(event, 'carriers')">Carriers</button>
+                </div>
+
+                <div id="schedule" class="tabcontent" style = "border: 1px solid grey;">
+                    <div id = "container2">
+
+                        <div class = "schedule_1 left">
+                            <label class = "top">Origin</label>
+                            <br/><br/>
+                            <input type = "text" name = "s_country" placeholder = "country"/>&nbsp;&nbsp;<input type = "text" name = "s_location" placeholder = "Location">
+                            <br/>
+                            <label>Name, Iocode, region, Country</label>
+                        </div>
+
+                        <div class = "schedule_2 left">
+                            <label class = "top">Destination</label>
+                            <br/><br/>
+                            <input type = "text" name = "s_country" placeholder = "country"/>&nbsp;&nbsp;<input type = "text" name = "s_location" placeholder = "Location">
+                            <br/><br/>
+                        </div>
+
+                        <div class = "schedule_3 left">
+                            <label class = "top">Date</label>
+                            <br/><br/>
+                            <input type = "date">
+                            <br/><br/>
+                            <center>
+                                <input type = "radio" name = "place">Depart by<input type = "radio" name = "place">Arrived by
+                            </center>
+                        </div>
+
+                        <div class = "schedule_4 left">
+                            <label class = "top">Range</label>
+                            <br/><br/>
+                            <select>
+                                <option>Week1</option>
+                                <option>Week2</option>
+                                <option>week3</option>
+                                <option>week4</option>
+                                <option>week5</option>
+                            </select>
+                            <br/><br/>
+                        </div>
+                        
+                        <center><input type = "submit" name = "submit" value = "SEARCH SCHEDULES" class = "search_button"></center>
+                    </div>
+                </div>
+
+                <div id="vessel" class="tabcontent">
+                    <h3>Paris</h3>
+                    <p>Paris is the capital of France.</p> 
+                </div>
+
+                <div id="ports" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <div id="carriers" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <script>
+                    document.getElementById("defaultOpen").click();
+                </script>
+                </form>
+            </div>
+            <!--Body Ends-->
+        </div>
+
+        <div class="footercontainer0" style = "background: #222222;">
+
+            <div class = "footercontainer1">
+                <table style = "border-right-style: solid;border-right-width: 2px;border-right-color: black;height: 165px;">
+                    <tr><th colspan="2"><label>BROWSE MORE GIFTS</label></th><tr>
+                    <tr><th colspan="3"><hr class = "footerhr"></th><tr>
+                    <tr><td><label>For Birthdays</label></td><td></td><td>Cakes</td></tr>
+                    <tr><td><label>For Anniversaries</label></td><td></td><td>Flowers</td></tr>
+                    <tr><td><label>For Love</label></td><td></td><td>Chocolate</td></tr>
+                    <tr><td><label>For Christmas</label></td><td></td><td>Toys</td></tr>
+                    <tr><td><label>You and Me Collection</label></td><td></td><td>Shoes</td></tr>
+
+                </table>
+
+            </div>
+            <div class = "footercontainer2" id = "social">
+                <br/>
+                <img src = "images/send.png" width="15px" height="15px"/><label>Follow Us</label><br/>
+                <img src = "images/instagram.png" width="17px" height="17px"/>&nbsp;&nbsp;&nbsp;<img src = "images/google.png" width="17px" height="17px"/>&nbsp;&nbsp;&nbsp;<img src = "images/twitter.png" width="17px" height="17px"/>&nbsp;&nbsp;&nbsp;<img src = "images/facebook.png" width="17px" height="17px"/><br/><br/>
+                <label>Central office - Sri Lanka</label><br/>
+                <label>Company Address</label><br/>
+                <label>Hotline : 0770514865</label></br>
+                <label>E-mail : giftbay@gmail.com</label>
+            </div>
+
+            <div class = "footercontainer0" style = "height: 30px;text-align: left;">
+                <label>Copyright &copy; 2018 Gift Bay Powered by SLIIT. Online shopping for Sri Lankans around the world.</label>
+                <img src = "images/visa.png"  width="30px" height="30px" style = "float: right;padding-right: 5px">
+                <img src = "images/paypal.png"  width="30px" height="30px" style = "float: right;padding-right: 5px">
+                <img src = "images/mastercard.png" width="30px" height = "30px" style = "float : right;padding-right: 5px;">
+                <img src = "images/americanExpress.png" width="30px" height="30px" style = "float: right;padding-right: 5px">
+
+            </div>
+        </div>
+    </body>
+</html>

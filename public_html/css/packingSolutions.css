@@ -1,0 +1,90 @@
+.set1left{
+    float: left;
+    width: 35%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    border : 1px solid black;
+    height: 250px;
+    padding : 3% 0 3% 2%;
+}
+
+.set1right{
+    float: right;
+    width: 35%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    border : 1px solid black;
+    height: 250px;
+    padding : 3% 0 3% 2%;
+}
+
+.set2left{
+    float: left;
+    width: 35%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+    border : 1px solid black;
+    height: 250px;
+    padding : 3% 0 3% 2%;
+}
+
+.set2right{
+    float: right;
+    width: 35%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    border : 1px solid black;
+    height: 250px;
+    padding : 3% 0 3% 2%;
+}
+
+.setrow1 img{
+    padding-top: 10px;
+}
+
+.setrow2 img{
+    padding-top: 10px;
+}
+
+.input_boxes{
+    padding: 1%;
+    width: 50%;
+    font-size: 20px;
+    padding-right: 5%;
+}
+
+#cancel{
+    width: 100px;
+    height: 40px;
+    margin-right: 2%;
+}
+
+#cancel:hover{
+    background-color: red;
+}
+
+#submit:hover{
+    background-color: green;
+}
+
+
+#submit{
+    width: 100px;
+    height: 40px;
+    margin-right: 2%;
+}
+
+.buttonset{
+    margin: 2% 5% 2% 0;
+    width: 16%;
+}
+
+.setrow1 img:hover{
+    border: 1px solid lightgrey;
+    zoom: 150%;
+}
+
+.setrow2 img:hover{
+    border: 1px solid lightgrey;
+    zoom: 150%;
+}

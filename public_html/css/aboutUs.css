@@ -1,0 +1,37 @@
+.intro{
+    margin-bottom: 5%;
+    padding-left: 10%;
+    font-size: 25px;
+    width: 75%;
+}
+
+#container2{
+    
+}
+
+#container2 .about_left{
+    width: 33.33%;
+    margin-bottom: 5%;
+}
+
+#container2 .about_middle{
+    width: 33.33%;
+}
+
+#container2 .about_right{
+    width: 33.33%;
+}
+
+#img_container{
+    height: 300px;
+    margin: 3% 0px 100px 0px;
+    width: 50%;
+}
+
+#container2 img{
+    border: 1px solid #ccc;
+}
+
+#container2 label{
+    font-size: 20px;
+}

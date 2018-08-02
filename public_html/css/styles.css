@@ -1,0 +1,270 @@
+
+
+html, body {
+    width: 100%;
+    margin: 0;
+    background-color: white;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+#maincontainer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*Navigation bar decorations*/
+
+.lg {
+    list-style-type: none;
+    margin : 0;
+    padding : 0;
+    overflow : hidden;
+    background-color : black;
+    opacity: 5;
+}
+
+.lg {
+    font-weight: bold;
+    font-size: 17px;
+    width: 120px;
+    float : left;
+  /*  border-right : 1px solid #bbb;*/
+}
+
+.lg a {
+    display : block;
+    color : white;
+    text-align : center;
+    padding : 12px;
+    padding-left: 1px;
+    text-decoration : none;
+}
+
+.lg a:hover {
+    background-color : red;
+}
+
+.profile {
+    list-style-type: none;
+    margin : 0;
+    padding : 0;
+    overflow : hidden;
+    background-color : black;
+    opacity: 5;
+}
+
+.profile {
+    font-weight: bold;
+    font-size: 17px;
+    width: 120px;
+    float : left;
+  /*  border-right : 1px solid #bbb;*/
+}
+
+.profile a {
+    display : block;
+    color : white;
+    text-align : center;
+    padding : 12px;
+    padding-left: 1px;
+    text-decoration : none;
+}
+
+.profile a:hover {
+    background-color : blue;
+}
+
+
+
+.heading_ul {
+    list-style-type: none;
+    margin : 0;
+    padding : 0;
+    overflow : hidden;
+    background-color : black;
+}
+
+#header_li {
+    font-weight: bold;
+    font-size: 17px;
+    width: 130px;
+    float : left;
+  /*  border-right : 1px solid #bbb;*/
+}
+
+#header_li a {
+	padding: 12px;
+    display : block;
+    color : white;
+    text-align : center;
+    padding-left: 1px;
+    text-decoration : none;
+}
+
+#header_li a:hover {
+    background-color : red;
+}
+
+.active {
+    background-color : #b00101;
+}
+
+/*End of navigation decoration*/
+
+/*header*/
+
+.header1 {
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color : #222222;
+}
+
+.header1 table td{
+    padding-right: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.header2 {
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color : #e8e8e8;
+    margin-bottom: 2%;
+}
+
+/*gift bay*/
+
+.topic {
+    font-size : 100px;
+    color: red;
+}
+
+/*All categories*/
+
+.navbar {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropDownbtn{
+    
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropDown{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+}
+
+.dropDown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropDown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropDown-content a:hover{
+    background-color: #b00101;
+    width: 120px;
+}
+
+.dropDown:hover .dropDown-content{
+    display: block;
+}
+
+.dropDown:hover .dropDownbtn{
+    background-color: #b00101;
+}
+
+.search{
+    width: 100%;
+    height: 25px;
+}
+
+.position{
+    width: 15%;
+    margin: 9px 25px 12px 12px;
+}
+
+
+/*Create footer*/
+.cart
+{
+    float : right;
+    padding : 3.5% 5px 0px 0px;
+}
+
+.allcategories{
+    height: 30px;
+    width: 200px;
+}
+
+div a {
+    float : left;
+    text-decoration: none;
+    color: black;
+}
+
+.vl{
+    border-left: 2px solid black;
+    height: 100px;
+    float: right;
+}
+
+.footerhr{
+    border-style: solid;
+    color: black;
+    width: 400px;
+    float: left;
+}
+
+.footercontainer0
+{
+    color: white;
+    padding-top: 4px;
+    width: 100%;
+    border: 1px solid black;
+    float: left;
+    background: #222222;
+}
+
+.footercontainer1
+{
+    color: white;
+    width: 60%;
+    float: left;
+    background: #222222;
+}
+
+.footercontainer2
+{
+    color: white;
+    padding: 0 20px 0 0;
+    float: right;
+    background: #222222;
+}
+

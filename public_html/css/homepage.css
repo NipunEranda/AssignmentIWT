@@ -1,0 +1,133 @@
+.sign{
+    float: right;
+    border-radius: 15px;
+    line-height: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-right: 10px;
+}
+
+.categories{
+    margin-left: 2%;
+    border-radius: 15px;
+    line-height: 25px;
+    float: left;
+    padding: 30px 40px 30px 40px;
+    border: 1px solid black;
+    color: #AF3544;
+}
+
+#maincontainer .left{
+    width: 16%;
+    padding-left: 10px;
+}
+
+#maincontainer .right {
+    width: 20%;
+    float: right;
+    padding: 20px 5px 20px 5px;
+}
+
+#maincontainer .middle {
+    width: 60%;
+    height: 100%
+}
+
+.categories label{
+    font-size: 20px;
+}
+
+.column{
+    float: left;
+}
+
+.whatsnew{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.whatsnew a{
+    font-size : 18px;
+}
+
+div a{
+    text-decoration: underline;
+}
+
+.div_button1{
+    margin-left: 25%;
+    margin-bottom: 3%;
+    width: 40%;
+    height: 35px;
+    background: lightgrey;
+    border: 1px solid grey;
+}
+
+.div_button2{
+    margin-left: 30%;
+    margin-bottom: 3%;
+    width: 40%;
+    height: 35px;
+    background: lightgrey;
+    border: 1px solid grey;
+}
+
+.div_button3{
+    margin-left: 30%;
+    margin-bottom: 3%;
+    width: 40%;
+    height: 35px;
+    background: lightgrey;
+    border: 1px solid grey;
+}
+
+.image_left{
+    border-radius: 25px;
+    margin : 3% 10% 0 0;
+}
+
+.image_left img{
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.image_middle img{
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.image_right img{
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.image_middle{
+    width:25%;
+    height: 250px;
+    margin: 3% 0 0 0;
+}
+
+.image_right{
+    margin: 3% 0 0 15%;
+}
+
+.pagin{
+    display: inline-block;
+    margin: 15px 0 15px 0;
+}
+
+.pagin a{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagin a .active{
+    background-color: #f83296;
+    color: white;
+}
+
+.pagin a:hover{
+    background-color: lightgray;
+}
