@@ -5,59 +5,80 @@
 
 .createAccount
 {
+    width: 100%;
     margin-bottom: 100px;
     border-radius: 15px;
     line-height: 30px;
     font-size: 19px;
     width: 40%;
     float: left;
-    padding: 3%;
+    padding: 4%;
     background: transparent;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     margin-left: 27%;
+    
+    background:rgba(0,0,0,.8);
+    box-shadow:0 15px 25px rgba(0,0,0,0.8);
 }
 
-.createAccount .left{
-    width: 45%;
-    float: left;
-}
-
-.createAccount .right{
-    margin-top: 100px;
-    width: 45%;
-    float: right;
+.createAccount label{
+    font-size: 50px;
+    color: white;
 }
 
 .frmInput
 {
-    width: 100%;
-    height: 20px;
+    width: 50%;
+    float: right;
+    height: 30px;
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
+    
+    background-color: whitesmoke;
+    background:rgba(255,255,255,.8);
 }
 
 .frmButton
 {
     float: right;
     margin: auto;
-    padding: 5px;
-    background: white;
+    padding:3px 5px 3px 5px;
+    background-color: #3392fd;
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    width: 120px;
+    width: 20%;
     height: 50px;
     border-color: black;
+    color: white;
 }
 .frmButton:hover
 {
-    background-color: gray;
+    background-color: #003167;
     border-width: 0px;
 }
 
-ul li{
+.form ul li{
     line-height: 50px;
+    color: white;
+}
+
+#header_li a:hover {
+    background-color : #5753e1;
+}
+
+.active {
+    background-color : blue;
+}
+
+.dropDown:hover .dropDownbtn{
+    background-color: blue;
+}
+
+.dropDown-content a:hover{
+    background-color: #5753e1;
+    width: 120px;
 }

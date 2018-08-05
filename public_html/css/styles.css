@@ -3,7 +3,7 @@
 html, body {
     width: 100%;
     margin: 0;
-    background-color: white;
+    background-size: cover;
 }
 
 .left{
@@ -28,14 +28,11 @@ html, body {
     overflow : hidden;
     background-color : black;
     opacity: 5;
-}
-
-.lg {
     font-weight: bold;
     font-size: 17px;
     width: 120px;
-    float : left;
-  /*  border-right : 1px solid #bbb;*/
+    width: 120px;
+    float : right;
 }
 
 .lg a {
@@ -49,6 +46,7 @@ html, body {
 
 .lg a:hover {
     background-color : red;
+    transition-duration: 0.5s;
 }
 
 .profile {
@@ -58,16 +56,11 @@ html, body {
     overflow : hidden;
     background-color : black;
     opacity: 5;
-}
-
-.profile {
     font-weight: bold;
     font-size: 17px;
     width: 120px;
-    float : left;
-  /*  border-right : 1px solid #bbb;*/
+    float : right;
 }
-
 .profile a {
     display : block;
     color : white;
@@ -78,7 +71,8 @@ html, body {
 }
 
 .profile a:hover {
-    background-color : blue;
+    background-color : blue; 
+    transition-duration: 0.5s;
 }
 
 
@@ -88,7 +82,7 @@ html, body {
     margin : 0;
     padding : 0;
     overflow : hidden;
-    background-color : black;
+    background:rgba(0,0,0,.8);
 }
 
 #header_li {
@@ -125,22 +119,13 @@ html, body {
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    background-color : #222222;
+    background:rgba(0,0,0,0.9);
 }
 
 .header1 table td{
     padding-right: 10px;
     font-size: 20px;
     color: white;
-}
-
-.header2 {
-    padding: 5px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    background-color : #e8e8e8;
-    margin-bottom: 2%;
 }
 
 /*gift bay*/
@@ -153,7 +138,7 @@ html, body {
 /*All categories*/
 
 .navbar {
-    background-color: #333;
+    background:rgba(0,0,0,.8);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -175,7 +160,7 @@ html, body {
 .dropDown-content{
     display: none;
     position: absolute;
-    background-color: black;
+    background:rgba(0,0,0,.9);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -201,8 +186,12 @@ html, body {
 }
 
 .search{
+    color: black;
+    background:rgba(255,255,255,.8);
     width: 100%;
     height: 25px;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 .position{
@@ -230,14 +219,14 @@ div a {
 }
 
 .vl{
-    border-left: 2px solid black;
+    border-left: 2px solid white;
     height: 100px;
     float: right;
 }
 
 .footerhr{
-    border-style: solid;
-    color: black;
+    border-style: solid ;
+    color: white;
     width: 400px;
     float: left;
 }
@@ -245,11 +234,10 @@ div a {
 .footercontainer0
 {
     color: white;
-    padding-top: 4px;
     width: 100%;
     border: 1px solid black;
     float: left;
-    background: #222222;
+    background:rgba(0,0,0,.8);
 }
 
 .footercontainer1
@@ -257,7 +245,13 @@ div a {
     color: white;
     width: 60%;
     float: left;
-    background: #222222;
+}
+
+.footercontainer1 table{
+    border-right-style:solid;
+    border-right-width: 2px;
+    border-right-color: white;
+    height: 165px;
 }
 
 .footercontainer2
@@ -265,6 +259,28 @@ div a {
     color: white;
     padding: 0 20px 0 0;
     float: right;
-    background: #222222;
 }
 
+.footercontainer0 table label{
+    font-size: 18px;
+}
+
+.footercontainer0 table{
+    margin: 10px 0px 10px 0px;
+}
+
+.footercontainer0 i{
+     font-size: 25px;
+     color:white;
+     float: right;
+     margin-right: 5px;
+}
+
+.footercontainer1 table a{
+    color: white;
+    text-decoration:none;
+}
+
+.footercontainer2 img{
+    margin-right: 10px;
+}

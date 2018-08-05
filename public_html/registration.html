@@ -1,192 +1,144 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home page</title>
+        <title>Registration</title>
         <link rel = "stylesheet" href = "css/styles.css">
         <link rel = "stylesheet" href = "css/createAccount.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body  background = "images/background1.jpg" style = "background-repeat: no-repeat;">
         <ul class = "heading_ul">
             <li id = "header_li"><a class = "active" href = "index.html">Home</a></li>
             <li id = "header_li"><a href = "aboutUs.html">About Us</a></li>
-            <li id = "header_li"><a href = "contactUs.html">Contact Us</a></li>
-            <li id = "header_li"><a href = "feedBack.html">Rate Us</a></li>
             <li id = "header_li"><a href = "myAccount.html">My Account</a></li>
+            <li id = "header_li"><a href = "feedBack.html">Rate Us</a></li>
+            <li id = "header_li"><a href = "Contact.html">Contact Us</a></li>
+            <li class = "lg"><a href = "logout.html">Log out</a></li>
+            <li class = "profile"><a href = "myAccount.html"><label>User #1234</label></a></li>
         </ul>
 
 
         <div class = "header1">
-            <img src = "images/ico4.png" width = "200px" height = "200px" alt = "icon" style = "padding: 5px 0px 0px 5px;">
-            <b class = "topic">GIFT BAY</b>
-            <table style = "float : right; padding : 50px 3px">
-                <tr><td>My cart &nbsp;&nbsp;&nbsp;</td></tr>
+            <img src = "images/ico4.png" width = "200" height = "200" alt = "icon">
+
+            <label class = "topic" style = "color: blue;">GIFT BAY</label>
+            <table style = "float : right; padding : 4% 0px 0px 1%;">
+                <tr><td><a href = "myCart.html" style = "text-decoration: none; color: white;">My cart</a> &nbsp;&nbsp;&nbsp;</td></tr>
                 <tr><td>0 items</td></tr>
             </table>
-            <img class = "cart" src = "images/cart_white.png" width = "100" height = "80" alt = "cart_image">
+            <i class="fa fa-shopping-cart" style="font-size:75px; color:white; float: right; margin-top: 3%;"></i>
         </div>
         <div class="navbar">
             <div class = "dropDown">
                 <button class = "dropDownbtn">All Categories</button>
                 <div class = "dropDown-content">
-                    <a href = "">Gift Baskets</a>
-                    <a href = "">Gift For Her</a>
-                    <a href = "">Gift For Him</a>
-                    <a href = "">Books</a>
-                    <a href = "">Chocolates</a>
-                    <a href = "">Electronics</a>
-                    <a href = "">Perfume</a>
-                    <a href = "">Gift Vouchers</a>
-                    <a href = "">Teddy bears</a>
-                    <a href = "">Clothes</a>
-                    <a href = "">Jewelry</a>
-                    <a href = "">Fathers Day Gifts</a>
-                    <a href = "">Cakes</a>
+                    <a href = "baskets.html">Gift Baskets</a>
+                    <a href = "forher.html">Gift For Her</a>
+                    <a href = "forhim.html">Gift For Him</a>
+                    <a href = "books.html">Books</a>
+                    <a href = "chocolates.html">Chocolates</a>
+                    <a href = "Electronics.html">Electronics</a>
+                    <a href = "Perfumes.html">Perfume</a>
+                    <a href = "vouchers.html">Gift Vouchers</a>
+                    <a href = "teddys.html">Teddy bears</a>
+                    <a href = "clothes.html">Clothes</a>
+                    <a href = "jewelry.html">Jewelry</a>
+                    <a href = "specialdays.html">Fathers Day Gifts</a>
+                    <a href = "cakes.html">Cakes</a>
                 </div>
             </div>
             <div class = "right position">
-                <input class="search" type = "text" placeholder="Search..">
+                <input class="search" tyoe = "text" placeholder="Search..">
             </div>
         </div>
         <div id="maincontainer">
             <!--BODY STARTS-->
 
-            <!--    <div class="createAccount">
-                    <h3> Create Account </h3>
-                    <br>
-                    <form action=" " method="post" enctype="text/plain">
-                        <table class = "table_position">
-                            <tr><td colspan="3"><b>Personal Details </b></td></tr>
-                            <tr><td width="5%"></td><td width="20%">First Name <span style="color: red;">*</span></td><td width="615"><input class="frmInput" type="text" name="firstName"></td></tr>
-                            <tr><td width="5%"></td><td width="20%">Last Name <span style="color: red;">*</span></td><td width="615"><input class="frmInput" type="text" name="lastName"></td></tr>
-                            <tr><td width="5%"></td><td width="20%">E-mail <span style="color: red;">*</span></td><td width="615"><input class="frmInput" type="text" name="email"></td></tr>
-                            <tr><td width="5%"></td><td width="20%">Telephone Number <span style="color: red;">*</span></td><td width="615"><input class="frmInput" type="text" name="telNo"></td></tr>
-                            <tr><td colspan="3"><b>Address </b></td></tr>
-                            <tr><td width="5%"></td><td width="20%">Company Name </td><td width="615"><input class="frmInput" type="text" name="CompanyName"></td></tr>
-                            <tr><td width="5%"></td><td width="20%">Company ID</td><td width="615"><input class="frmInput" type="text" name="CompanyId"></td></tr>
-                            <tr><td width="5%"></td><td width="20%">Address <span style="color: red;">*</span></td><td width="615"><input class="frmInput" type="text" name="Address"></td></tr>
-                            <tr><td width="5%"></td><td width="20%">Postal Code</td><td width="615"><input class="frmInput" type="text" name="postalCode"></td></tr>
-                            <tr><td width="5%"></td><td width="20%">Country</td><td width="615">
-                                    <select class="frmInput" name="counnrty" style="width: 250px;">
-                                        <option>Sri Lanka</option>
-                                        <option>India</option>
-                                        <option>china</option>
-                                    </select></td></tr>
-                            <tr><td colspan="3"><b>Password </b></td></tr>
-                            <tr><td width="50"></td><td width="200">Password <span style="color: red;">*</span></td><td width="615"><input class="frmInput" type="password" name="password"></td></tr>
-                            <tr><td width="50"></td><td width="200">Confirm Password <span style="color: red;">*</span></td><td width="615"><input class="frmInput" type="Password" name="cPassword"></td></tr>
-                            <tr><td></td></tr>
-                            <tr><td align="center" colspan="3">
-                                    <input class="frmButton" type="reset">
-                                    <input class="frmButton" type="submit" value="Register">
-                                </td></tr>
-                        </table>
-                    </form>
-                </div>
-                
-            -->
-
             <div class = "createAccount">
                 <form action="" method="POST" enctype="text/plain">
-                    <div class = "left">
-                        <h3>Create Account</h3>
-                        <ul style = "list-style-type: none;">
-                            <li >Personal Details</li>
-                            <ul>
-                                <li>First Name </li>
-                                <li>Last Name</li>
-                                <li>E-mail</li>
-                                <li>Telephone Number</li>
-                            </ul>
-                            <li>Address</li>
+                    <label>Create Account</label>
+                    <div>
+                        <div class = "form">
                             <ul style = "list-style-type: none;">
-                                <li>Company Name</li>
-                                <li>Company ID</li>
+                                <li >Personal Details</li>
+                                <ul>
+                                    <li>First Name <input class="frmInput" type="text" name="firstName"/></li>
+                                    <li>Last Name <input class="frmInput" type="text" name="lastName"></li>
+                                    <li>E-mail <input class="frmInput" type="text" name="email"></li>
+                                    <li>Telephone Number <input class="frmInput" type="text" name="telNo"></li>
+                                </ul>
                                 <li>Address</li>
-                                <li>Postal Code</li>
-                                <li>Country</li>
-                            </ul>
-                            <li>Password</li>
-                            <ul style = "list-style-type: none;">
+                                <ul style = "list-style-type: none;">
+                                    <li>Company Name <input class="frmInput" type="text" name="CompanyName"></li>
+                                    <li>Company ID <input class="frmInput" type="text" name="CompanyId"></li>
+                                    <li>Address <input class="frmInput" type="text" name="Address"></li>
+                                    <li>Postal Code <input class="frmInput" type="text" name="postalCode"></li>
+                                    <li>Country
+                                        <select class="frmInput" name="country">
+                                            <option>Sri Lanka</option>
+                                            <option>India</option>
+                                            <option>china</option>
+                                        </select>
+                                    </li>
+                                </ul>
                                 <li>Password</li>
-                                <li>Confirm Password</li>
+                                <ul style = "list-style-type: none;">
+                                    <li>Password <input class="frmInput" type="password" name="password"></li>
+                                    <li>Confirm Password <input class="frmInput" type="password" name="Cpassword"></li>
+                                </ul>
                             </ul>
-                        </ul>
+                        </div>
+
+
+                        <div>
+                            <input class="frmButton" type="reset">
+                            <input class="frmButton" type="submit" value="Register"  style = "margin-right: 3%;">
+                        </div>
                     </div>
-
-                    <div class = "right">
-                        <ul style = "list-style-type: none;">
-                            <li><input class="frmInput" type="text" name="firstName"></li>
-                            <li><input class="frmInput" type="text" name="lastName"></li>
-                            <li><input class="frmInput" type="text" name="email"></li>
-                            <li><td width="615"><input class="frmInput" type="text" name="telNo"></li>
-                        </ul>
-                        <ul style = "list-style-type: none;margin-top: 14%;">
-                            <li><input class="frmInput" type="text" name="CompanyName"></li>
-                            <li><input class="frmInput" type="text" name="CompanyId"></li>
-                            <li><input class="frmInput" type="text" name="Address"></li>
-                            <li><input class="frmInput" type="text" name="postalCode"></li>
-                            <li>
-                                <select class="frmInput" name="country">
-                                    <option>Sri Lanka</option>
-                                    <option>India</option>
-                                    <option>china</option>
-                                </select>
-                            </li>
-                        </ul>
-
-                        <ul style = "list-style-type: none;margin-top: 50px;">
-                            <li><input class="frmInput" type="password" name="firstName"></li>
-                            <li><input class="frmInput" type="password" name="lastName"></li>
-                        </ul>
-
-                        <input class="frmButton" type="reset">
-                        <input class="frmButton" type="submit" value="Register"  style = "margin-right: 10px;">
-
-
-                    </div>
-
-
                 </form>
-
             </div>
 
 
             <!--Body Ends-->
         </div>
 
-        <div class="footercontainer0" style = "background: lightgrey;">
+        <div>
+            <div class="footercontainer0">
 
-            <div class = "footercontainer1">
-                <table style = "border-right-style: solid;border-right-width: 2px;border-right-color: black;height: 165px;">
-                    <tr><th colspan="2"><label>BROWSE MORE GIFTS</label></th><tr>
-                    <tr><th colspan="3"><hr class = "footerhr"></th><tr>
-                    <tr><td><label>For Birthdays</label></td><td></td><td>Cakes</td></tr>
-                    <tr><td><label>For Anniversaries</label></td><td></td><td>Flowers</td></tr>
-                    <tr><td><label>For Love</label></td><td></td><td>Chocolate</td></tr>
-                    <tr><td><label>For Christmas</label></td><td></td><td>Toys</td></tr>
-                    <tr><td><label>You and Me Collection</label></td><td></td><td>Shoes</td></tr>
+                <div class = "footercontainer1">
+                    <table>
+                        <tr><th colspan="2"><label>BROWSE MORE GIFTS</label></th><tr>
+                        <tr><th colspan="3"><hr class = "footerhr"></th><tr>
+                        <tr><td><label><a href = "birthdays.html">For Birthdays</a></label></td><td></td><td><label><a href = "cakes.html">Cakes</a></label></td></tr>
+                        <tr><td><label><a  href = "anniversary.html">For Anniversaries</a></label></td><td></td><td><label><a href = "flowers.html">Flowers</a></label></td></tr>
+                        <tr><td><label><a  href = "forlove.html">For Love</a></label></td><td></td><td><label><a href = "chocolates.html">Chocolate</a></label></td></tr>
+                        <tr><td><label><a  href = "christmasSeason.html">For Christmas</a></label></td><td></td><td><label><a href = "toys.html">Toys</a></label></td></tr>
+                        <tr><td><label><a  href = "forYouandMe.html">You and Me Collection</a></label></td><td></td><td><label><a href = "shoes.html">Shoes</a></label></td></tr>
+                    </table>
+                </div>
 
-                </table>
+                <div class = "footercontainer2" id = "social">
+                    <br/>
+                    <i class="fa fa-send-o" style="font-size:22px;color:white;float: left;"></i>&nbsp;<label>Follow Us</label><br/><br/>
+                    <a href = "http://www.instagram.com"><img src = "images/instagram.png" width="25px"/></a>
+                    <a href = "http://www.plus.google.com"><img src = "images/g-plus.png" width="25px"/></a>
+                    <a href = "http://www.twitter.com"><img src = "images/twitter.png" width="25px"/></a>
+                    <a href = "http://www.facebook.com"><img src = "images/facebook.png" width="25px"/></a>
+                    <br/><br/>
+                    <label>Central office - Sri Lanka</label><br/>
+                    <label>Company Address</label><br/>
+                    <label>Hotline : 0770514865</label></br>
+                    <label>E-mail : giftbay@gmail.com</label>
+                </div>
 
-            </div>
-            <div class = "footercontainer2" id = "social">
-                <br/>
-                <img src = "images/send.png" width="15px" height="15px"/><label>Follow Us</label><br/>
-                <img src = "images/instagram.png" width="17px" height="17px"/>&nbsp;&nbsp;&nbsp;<img src = "images/google.png" width="17px" height="17px"/>&nbsp;&nbsp;&nbsp;<img src = "images/twitter.png" width="17px" height="17px"/>&nbsp;&nbsp;&nbsp;<img src = "images/facebook.png" width="17px" height="17px"/><br/><br/>
-                <label>Central office - Sri Lanka</label><br/>
-                <label>Company Address</label><br/>
-                <label>Hotline : 0770514865</label></br>
-                <label>E-mail : giftbay@gmail.com</label>
-            </div>
-
-            <div class = "footercontainer0" style = "height: 30px;text-align: left;">
-                <label>Copyright &copy; 2018 Gift Bay Powered by SLIIT. Online shopping for Sri Lankans around the world.</label>
-                <img src = "images/visa.png"  width="30px" height="30px" style = "float: right;padding-right: 5px">
-                <img src = "images/paypal.png"  width="30px" height="30px" style = "float: right;padding-right: 5px">
-                <img src = "images/mastercard.png" width="30px" height = "30px" style = "float : right;padding-right: 5px;">
-                <img src = "images/americanExpress.png" width="30px" height="30px" style = "float: right;padding-right: 5px">
-
+                <div class = "footercontainer0" style = "height: 30px;text-align: left;">
+                    <label>Copyright &copy; 2018 Gift Bay Powered by SLIIT. Online shopping for Sri Lankans around the world.</label>
+                    <i class="fa fa-cc-visa"></i>
+                    <i class="fa fa-cc-paypal"></i>
+                    <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                    <i class="fa fa-cc-amex"></i>
+                </div>
             </div>
         </div>
     </body>

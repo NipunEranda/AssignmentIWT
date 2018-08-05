@@ -2,36 +2,46 @@
     float: right;
     border-radius: 15px;
     line-height: 30px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    margin-right: 10px;
+    margin:5% 10px 50px 0px;
+    border: 1px solid black;
+    background:rgba(255,255,255,.6);
+}
+
+.sign input[type = submit]{
+    float: right;
+    width: 30%;
+    height: 40px;
 }
 
 .categories{
-    margin-left: 2%;
+    margin:35% 0px 0px 2%;
     border-radius: 15px;
     line-height: 25px;
     float: left;
     padding: 30px 40px 30px 40px;
+    color: black;
     border: 1px solid black;
-    color: #AF3544;
+    background:rgba(255,255,255,.5);
 }
 
-#maincontainer .left{
-    width: 16%;
+#maincontainer1 .left{
+    width: 15%;
     padding-left: 10px;
+    margin-right: 3%;
 }
 
-#maincontainer .right {
-    width: 20%;
+#maincontainer1 .right {
+    width: 15%;
     float: right;
-    padding: 20px 5px 20px 5px;
+    padding: 20px 5px 20px 0px;
+    margin-left: 2%;
 }
 
-#maincontainer .middle {
-    width: 60%;
-    height: 100%
+#maincontainer1 .middle {
+    padding:5% 2% 0px 2%;
+    width: 55%;
+    height: 100%;
+    background:rgba(0,0,0,.7);
 }
 
 .categories label{
@@ -58,33 +68,41 @@ div a{
 .div_button1{
     margin-left: 25%;
     margin-bottom: 3%;
-    width: 40%;
+    width: 50%;
     height: 35px;
     background: lightgrey;
     border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .div_button2{
     margin-left: 30%;
     margin-bottom: 3%;
-    width: 40%;
+    width: 50%;
     height: 35px;
     background: lightgrey;
     border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .div_button3{
     margin-left: 30%;
     margin-bottom: 3%;
-    width: 40%;
+    width: 50%;
     height: 35px;
     background: lightgrey;
     border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .image_left{
+    color: white;
+    width:20%;
     border-radius: 25px;
-    margin : 3% 10% 0 0;
+    margin : 3% 20% 2% 0px;
 }
 
 .image_left img{
@@ -92,24 +110,27 @@ div a{
     border-radius: 25px;
 }
 
+.image_middle{
+    color: white;
+    width:20%;
+    height: 250px;
+    margin: 3% 0px 2% 0px;
+}
+
 .image_middle img{
     border: 1px solid black;
     border-radius: 25px;
 }
 
+.image_right{
+    color:white;
+    width:20%;
+    margin: 3% 0px 2% 20%;
+}
+
 .image_right img{
     border: 1px solid black;
     border-radius: 25px;
-}
-
-.image_middle{
-    width:25%;
-    height: 250px;
-    margin: 3% 0 0 0;
-}
-
-.image_right{
-    margin: 3% 0 0 15%;
 }
 
 .pagin{

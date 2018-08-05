@@ -1,0 +1,86 @@
+#header_li a:hover {
+    transition-duration: 0.3s;
+    color: black;
+    background: linear-gradient(to top, #ff6600 0%, #ff0000 100%);
+}
+
+.active {
+    background-color : red;
+}
+
+.dropDown:hover .dropDownbtn{
+    transition-duration: 0.5s;
+    background-color: red;
+}
+
+.dropDown-content a:hover{
+    transition-duration: 0.3s;
+    color: black;
+    background: linear-gradient(to top, #ff6600 0%, #ff0000 100%);
+    width: 120px;
+}
+
+.form{
+    margin: 0px 20% 5% 20%;
+    color: white;
+    padding: 0px 5% 0px 5%;
+    background:rgba(0,0,0,.7);
+}
+
+.form input[type = submit]{
+    color: black;
+    border: 1px solid black;
+    background: linear-gradient(to top, #ff6600 0%, #ff0000 100%);
+}
+
+.form input[type = submit]:hover{
+    color: white;
+    background: linear-gradient(to top, #ff0000 0%, #ff6600 100%);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+#container2{
+}
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color:white;
+    width: 90%;
+    height: 100px;
+    background:rgba(255,255,255,.4);
+    margin: 2% 0px 2% 0px;
+}
+
+.rating {
+    width: 100%;
+}
+.rating span {position:relative; }
+.rating span input {
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+}
+.rating span label {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    text-align:center;
+    color:#FFF;
+    background:black;
+    font-size:30px;
+    margin-right:2px;
+    line-height:30px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+}
+.rating span:hover ~ span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked ~ span label {
+    background:#F90;
+    color:#FFF;
+}

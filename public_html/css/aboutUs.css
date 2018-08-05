@@ -1,24 +1,50 @@
+#header_li a:hover {
+    background-color : #5753e1;
+}
+
+.active {
+    background-color : blue;
+}
+
+.dropDown:hover .dropDownbtn{
+    background-color: blue;
+}
+
+.dropDown-content a:hover{
+    background-color: #5753e1;
+    width: 120px;
+}
+
 .intro{
     margin-bottom: 5%;
     padding-left: 10%;
-    font-size: 25px;
+    font-size: 30px;
     width: 75%;
 }
 
 #container2{
-    
+    color: white;
+}
+
+#container2 .container1{
+    padding: 5%;
+    background:rgba(0,0,0,.5);
 }
 
 #container2 .about_left{
+    background:rgba(0,0,0,.5);
     width: 33.33%;
     margin-bottom: 5%;
 }
 
 #container2 .about_middle{
+    color: white;
+    background:rgba(0,0,0,.5);
     width: 33.33%;
 }
 
 #container2 .about_right{
+    background:rgba(0,0,0,.5);
     width: 33.33%;
 }
 
@@ -34,4 +60,6 @@
 
 #container2 label{
     font-size: 20px;
+    color: white;
 }
+

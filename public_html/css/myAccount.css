@@ -1,0 +1,146 @@
+#header_li a:hover {
+    color: black;
+    background-color : #ccc;
+    transition-duration: 0.5s;
+}
+
+.active {
+    background-color : grey;
+}
+
+.dropDown:hover .dropDownbtn{
+    transition-duration: 0.5s;
+    color: black;
+    background-color: Grey;
+}
+
+.dropDown-content a:hover{
+    transition-duration: 0.5s;
+    color: black;
+    background-color: #ccc;
+    width: 120px;
+}
+
+.btn-group{
+    display: inline-block;
+    padding-left: 10%;
+    width: 60%;
+}
+
+.btn-group button {
+    background:rgba(0,0,0,.8);
+    border: 1px solid black; 
+    color: white; 
+    padding: 8%;
+    cursor: pointer; 
+    width: 100%; 
+    display: block;
+    font-size: 17px;
+}
+
+.btn-group button:hover{
+    background-color: #ccc;
+    transition-duration: 0.5s;
+    color: black;
+}
+
+fieldset{
+    float: left;
+    padding: 5%;
+    border: 1px solid white;
+    color: white;
+    width: 90%;
+    margin-bottom: 10%;
+}
+
+fieldset label{
+    font-size: 18px;
+}
+
+fieldset button{
+    margin-right: 10px;
+    padding: 1.5%;
+}
+
+fieldset button:hover{
+    cursor: pointer;
+}
+
+fieldset input[type = submit]{
+    padding: 1.5%;
+}
+
+fieldset input[type = submit]:hover{
+    cursor: pointer;
+}
+
+
+fieldset input[type = text]{
+    float: right;
+    width: 45%;
+}
+
+.user {
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+.checkout{
+    background:rgba(0,0,0,.7);
+    border : 1px solid black; 
+    line-height: 30px;
+    padding : 5%;
+    display: inline-block;
+    color: white;
+}
+
+.checkout label{
+    text-align: right;
+    line-height: 20px;
+}
+
+.checkout button{
+    width: 35%;
+    height: 40px;
+    float: right;
+}
+
+.checkout button:hover{
+    cursor: pointer;
+}
+
+#container2 .myAccount_left{
+    width: 25%;
+    margin-bottom: 5%;
+}
+
+#container2 .myAccount_middle{
+    padding: 4%;
+    background:rgba(0,0,0,.7);
+    color: white;
+    width: 33.33%;
+    margin-bottom: 5%;
+}
+
+#container2 .myAccount_right{
+    width: 33.33%;
+}
+
+#inner-container .leftside{
+    width: 50%;
+}
+
+#inner-container .leftside label{
+    float: left;
+}
+
+#inner-container .rightside{
+    margin-top: 31%;
+    width:50%;
+}
+
+#inner-container .rightside button{
+    margin-left: 5%;
+    padding: 4%;
+}
