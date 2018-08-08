@@ -27,7 +27,7 @@
 #maincontainer1 .left{
     width: 15%;
     padding-left: 10px;
-    margin-right: 3%;
+    margin-right: 4%;
 }
 
 #maincontainer1 .right {
@@ -43,6 +43,15 @@
     height: 100%;
     background:rgba(0,0,0,.7);
 }
+
+.fling-minislide {width: 100%; height: 400px; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}} 
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
 
 .categories label{
     font-size: 20px;
@@ -66,36 +75,52 @@ div a{
 }
 
 .div_button1{
+    color: black;
     margin-left: 25%;
     margin-bottom: 3%;
-    width: 50%;
+    width: 60%;
     height: 35px;
-    background: lightgrey;
-    border: 1px solid grey;
-    border-radius: 10px;
+    background: #4CAF50;
+    border: 1px solid #4CAF30;
     cursor: pointer;
+}
+
+.div_button1:hover{
+    color: white;
+    background-color: #4CAF50;
+    opacity: 0.8;
 }
 
 .div_button2{
     margin-left: 30%;
     margin-bottom: 3%;
-    width: 50%;
+    width: 60%;
     height: 35px;
-    background: lightgrey;
-    border: 1px solid grey;
-    border-radius: 10px;
+    background: #4CAF50;
+    border: 1px solid #4CAF30;
     cursor: pointer;
+}
+
+.div_button2:hover{
+    color: white;
+    background-color: #4CAF50;
+    opacity: 0.7;
 }
 
 .div_button3{
     margin-left: 30%;
     margin-bottom: 3%;
-    width: 50%;
+    width: 60%;
     height: 35px;
-    background: lightgrey;
-    border: 1px solid grey;
-    border-radius: 10px;
+    background: #4CAF50;
+    border: 1px solid #4CAF30;
     cursor: pointer;
+}
+
+.div_button3:hover{
+    color: white;
+    background-color: #4CAF50;
+    opacity: 0.7;
 }
 
 .image_left{
@@ -139,7 +164,7 @@ div a{
 }
 
 .pagin a{
-    color: black;
+    color: white;
     padding: 8px 16px;
     text-decoration: none;
 }
@@ -150,5 +175,7 @@ div a{
 }
 
 .pagin a:hover{
+    transition-duration: 0.4s;
+    color: black;
     background-color: lightgray;
 }

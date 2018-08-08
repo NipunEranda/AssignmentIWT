@@ -1,3 +1,7 @@
+.topic_PS{
+    color: white;
+}
+
 .set1left{
     float: left;
     width: 35%;
@@ -6,6 +10,15 @@
     border : 1px solid black;
     height: 250px;
     padding : 3% 0 3% 2%;
+    background:rgba(255,255,255,.5);
+}
+
+.setrow1 img{
+    width: 25%;
+}
+
+.setrow2 img{
+    width: 25%;
 }
 
 .set1right{
@@ -16,6 +29,7 @@
     border : 1px solid black;
     height: 250px;
     padding : 3% 0 3% 2%;
+    background:rgba(255,255,255,.5);
 }
 
 .set2left{
@@ -26,6 +40,7 @@
     border : 1px solid black;
     height: 250px;
     padding : 3% 0 3% 2%;
+    background:rgba(255,255,255,.5);
 }
 
 .set2right{
@@ -36,6 +51,7 @@
     border : 1px solid black;
     height: 250px;
     padding : 3% 0 3% 2%;
+    background:rgba(255,255,255,.5);
 }
 
 .setrow1 img{
@@ -60,11 +76,11 @@
 }
 
 #cancel:hover{
-    background-color: red;
+    background: linear-gradient(to bottom, #999966 0%, #ffffff 100%);
 }
 
 #submit:hover{
-    background-color: green;
+    background: linear-gradient(to bottom, #999966 0%, #ffffff 100%);
 }
 
 
@@ -75,16 +91,6 @@
 }
 
 .buttonset{
-    margin: 2% 5% 2% 0;
+    margin: 1% 5% 2% 0;
     width: 16%;
-}
-
-.setrow1 img:hover{
-    border: 1px solid lightgrey;
-    zoom: 150%;
-}
-
-.setrow2 img:hover{
-    border: 1px solid lightgrey;
-    zoom: 150%;
 }

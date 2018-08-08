@@ -10,6 +10,6 @@ $(document).ready(function(){
     $('input:radio').change(
       function(){
         var userRating = this.value;
-        alert(userRating);
+        alert("Thank you!!!");
     }); 
 });

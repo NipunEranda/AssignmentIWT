@@ -1,9 +1,12 @@
-
-
 html, body {
     width: 100%;
     margin: 0;
     background-size: cover;
+}
+
+
+#maincontainer{
+    margin-top: 100px;
 }
 
 .left{
@@ -12,11 +15,6 @@ html, body {
 
 .right{
     float: right;
-}
-
-#maincontainer{
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
 /*Navigation bar decorations*/
@@ -194,6 +192,11 @@ html, body {
     border-radius: 10px;
 }
 
+.search:hover{
+    transition-duration: 0.4s;
+    background-color: white;
+}
+
 .position{
     width: 15%;
     margin: 9px 25px 12px 12px;
@@ -283,4 +286,9 @@ div a {
 
 .footercontainer2 img{
     margin-right: 10px;
+}
+
+.footercontainer2 img:hover{
+    transition-duration: 0.3s;
+    opacity: 0.5;
 }
