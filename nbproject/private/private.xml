@@ -3,12 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/media/nipun/Educational/SLIIT/year1/sem2/workspace/IWT/AssignmentIWT/public_html/css/shippingSchedule.css</file>
-            <file>file:/media/nipun/Educational/SLIIT/year1/sem2/workspace/IWT/AssignmentIWT/public_html/css/myAccount.css</file>
-            <file>file:/media/nipun/Educational/SLIIT/year1/sem2/workspace/IWT/AssignmentIWT/public_html/js/myAccount.js</file>
-            <file>file:/media/nipun/Educational/SLIIT/year1/sem2/workspace/IWT/AssignmentIWT/public_html/myAccount.html</file>
-            <file>file:/media/nipun/Educational/SLIIT/year1/sem2/workspace/IWT/AssignmentIWT/public_html/Shippingschedule.html</file>
-            <file>file:/media/nipun/Educational/SLIIT/year1/sem2/workspace/IWT/AssignmentIWT/public_html/js/shippingSchedule.js</file>
+            <file>file:/var/www/html/Assignment/public_html/index.php</file>
+            <file>file:/var/www/html/Assignment/public_html/Homepage.php</file>
+            <file>file:/var/www/html/Assignment/public_html/components/header.php</file>
+            <file>file:/var/www/html/Assignment/public_html/components/login.php</file>
+            <file>file:/var/www/html/Assignment/public_html/components/server_Config.php</file>
         </group>
     </open-files>
 </project-private>
