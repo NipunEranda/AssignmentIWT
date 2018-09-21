@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 
-<?php include 'components/header.php'; ?>
-<?php require_once 'components/server_Config.php'; ?>
-<?php include 'components/login.php';?>
+<?php 
+include 'components/header.php'; 
+include 'components/logincheck.php';
+?>
 
 <html>
     <head>
         <title>Home page</title>
         <link rel = "stylesheet" href = "css/styles.css">
-        <link rel = "stylesheet" href = "css/homepage.css">
+        <link rel = "stylesheet" href = "css/Homepage.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src = "js/homepage.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -124,22 +125,6 @@
             </div>
 
 
-            <div class="right column sign">
-                <center><form name = "login" action = "" method = "POST" style = "margin: 8% 5% 15% 5%;">
-                        <center>
-                            <h1>LOGIN</h1>
-                            <label style = "float: left;font-size: 20px;">Email</label><input type = "email" name="usr_email" placeholder = "Your email" required style = "height: 20px;width: 60%;float: right;"><br/><br/>
-                            <p id = "p3"></p>
-                            <label style = "float: left;font-size: 20px;">Password</label><input type = "password" name = "usr_password" placeholder = "Your password" required style = "height: 20px;width: 60%;float: right;"><br/><br/>
-                            <input type = "submit" name = "usr_login" value = "Login">
-                            <br/><br/>
-                            <a href = "registration.php" style = "float: right;text-decoration: none;">Create an Account.</a>
-                        </center>
-                    </form>
-                </center>
-                
-
-            </div>
 
 
             <div class="right column sign whatsnew">
@@ -160,7 +145,7 @@
             <!--Body Ends-->
         </div>
 
-<?php include_once 'components/footer.php'; ?>
+        <?php include_once 'components/footer.php'; ?>
 
     </body>
 </html>

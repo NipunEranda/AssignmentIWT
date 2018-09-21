@@ -3,7 +3,7 @@
 }
 
 .lg a {
-    display : block;
+    display : none;
     color : white;
     text-align : center;
     padding : 12px;
@@ -12,7 +12,7 @@
 }
 
 .profile a {
-    display : block;
+    display : none;
     color : white;
     text-align : center;
     padding : 12px;
@@ -200,4 +200,12 @@ div a{
     transition-duration: 0.4s;
     color: black;
     background-color: lightgray;
+}
+
+.header1 table .hidden{
+    display: none;
+}
+
+.header1 i{
+    display: none;
 }

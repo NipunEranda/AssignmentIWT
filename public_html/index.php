@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
-<?php include 'components/header.php'; ?>
-<?php include 'components/server_Config.php'; ?>
-<?php session_start();?>
+<?php include 'components/header.php';
+include 'components/login.php';
+?>
 
 <html>
     <head>
@@ -124,6 +124,22 @@
             </div>
 
 
+            <div class="right column sign">
+                <center><form name = "login" action = "" method = "POST" style = "margin: 8% 5% 15% 5%;">
+                        <center>
+                            <h1>LOGIN</h1>
+                            <label style = "float: left;font-size: 20px;">Email</label><input type = "email" name="usr_email" placeholder = "Your email" required style = "height: 20px;width: 60%;float: right;"><br/><br/>
+                            <p id = "p3"></p>
+                            <label style = "float: left;font-size: 20px;">Password</label><input type = "password" name = "usr_password" placeholder = "Your password" required style = "height: 20px;width: 60%;float: right;"><br/><br/>
+                            <input type = "submit" name = "usr_login" value = "Login"><br>
+                            <br/><br/>
+                            <a href = "registration.php" style = "float: right;text-decoration: none;">Create an Account.</a>
+                        </center>
+                    </form>
+                </center>
+                
+
+            </div>
 
 
             <div class="right column sign whatsnew">
@@ -144,7 +160,7 @@
             <!--Body Ends-->
         </div>
 
-        <?php include_once 'components/footer.php'; ?>
+<?php include_once 'components/footer.php'; ?>
 
     </body>
 </html>

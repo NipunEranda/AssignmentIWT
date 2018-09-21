@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php include 'components/header.php'; ?>
+<?php include 'components/logincheck.php';?>
 <html>
     <head>
         <title>Shipping Schedule</title>
@@ -9,8 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body background = "images/backgrounds/background12.jpg">
-        
-        <?php include 'components/header.php'; ?>
         
         <div id="maincontainer">
             <!--BODY STARTS-->

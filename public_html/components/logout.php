@@ -1,4 +1,5 @@
 <?php
-    $_SESSION['use'] = "";
-  header("Location: ../Homepage.php");
+  session_start();
+  session_destroy();
+  header("Location: ../index.php");
 ?>

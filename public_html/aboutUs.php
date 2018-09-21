@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php include 'components/header.php'; ?>
+<?php include 'components/logincheck.php';?>
 <html>
     <head>
         <title>About Us</title>
@@ -9,7 +11,6 @@
     </head>
     <body background = "images/backgrounds/background9.jpg">
         
-        <?php include 'components/header.php'; ?>
         
         <div id="maincontainer" style = "padding: 0px 10% 0px 10%;">
             <!--BODY STARTS-->

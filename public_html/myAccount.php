@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php include 'components/header.php'; ?>
+<?php include 'components/logincheck.php';?>
 <html>
     <head>
         <title>My Account</title>
@@ -9,7 +11,6 @@
     </head>
     <body background = "images/backgrounds/background10.jpg">
 
-        <?php include 'components/header.php'; ?>
 
         <div id="maincontainer">
             <!--BODY STARTS-->

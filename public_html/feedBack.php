@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php include 'components/header.php'; ?>
+<?php include 'components/logincheck.php';?>
 <html>
     <head>
         <title>FeedBack</title>
@@ -9,8 +11,6 @@
         <script src = "js/feedback.js"></script>
     </head>
     <body background = "images/backgrounds/background7.jpg">
-        
-        <?php include 'components/header.php'; ?>
         
         <div id="maincontainer">
             <div class = "form">

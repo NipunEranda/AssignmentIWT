@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include 'components/header.php'; ?>
-<?php include 'components/server_Config.php'; ?>
+<?php include 'components/config.php'; ?>
 
 <html>
     <head>

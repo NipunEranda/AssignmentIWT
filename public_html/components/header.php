@@ -1,7 +1,10 @@
-<?php ?>
+<?php 
+session_start();
+require 'config.php';
+?>
 <script src = "js/homepage.js"></script>
 <ul id = "heading_ul">
-    <li id = "header_li"><a class = "active1" href = "index.php">Home</a></li>
+    <li id = "header_li"><a class = "active1" href = "Homepage.php">Home</a></li>
     <li id = "header_li"><a class = "active2" href = "aboutUs.php">About Us</a></li>
     <li id = "header_li"><a class = "active3" href = "myAccount.php">My Account</a></li>
     <li id = "header_li"><a class = "active4" href = "feedBack.php">Rate Us</a></li>
@@ -16,8 +19,8 @@
 
     <label class = "topic">GIFT BAY</label>
     <table style = "float : right; padding : 4% 0px 0px 1%;">
-        <tr><td><a href = "myCart.html" style = "text-decoration: none; color: white;">My cart</a> &nbsp;&nbsp;&nbsp;</td></tr>
-        <tr><td><label id = "no_items"></label>&nbsp;<label id = "item">Empty</label></td></tr>
+        <tr><td><a href = "myCart.html" style = "text-decoration: none; color: white; cursor: pointer;"><label class = "hidden">My cart</label></a> &nbsp;&nbsp;&nbsp;</td></tr>
+        <tr><td><label id = "no_items"></label>&nbsp;<label id = "item" class="hidden">Empty</label></td></tr>
     </table>
     <i class="fa fa-shopping-cart" style="font-size:75px; color:white; float: right; margin-top: 3%;"></i>
 </div>
