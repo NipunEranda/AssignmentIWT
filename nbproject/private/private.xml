@@ -3,13 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/var/www/html/AssignmentIWT/public_html/css/aboutUs.css</file>
             <file>file:/var/www/html/AssignmentIWT/public_html/components/header.php</file>
-            <file>file:/var/www/html/AssignmentIWT/public_html/components/logout.php</file>
-            <file>file:/var/www/html/AssignmentIWT/public_html/css/styles.css</file>
             <file>file:/var/www/html/AssignmentIWT/public_html/index.php</file>
-            <file>file:/var/www/html/AssignmentIWT/public_html/aboutUs.php</file>
-            <file>file:/var/www/html/AssignmentIWT/public_html/components/login.php</file>
+            <file>file:/var/www/html/AssignmentIWT/public_html/css/contactUs.css</file>
             <file>file:/var/www/html/AssignmentIWT/public_html/Homepage.php</file>
+            <file>file:/var/www/html/AssignmentIWT/public_html/css/Homepage.css</file>
         </group>
     </open-files>
 </project-private>

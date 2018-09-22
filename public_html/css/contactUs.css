@@ -1,3 +1,21 @@
+.lg a {
+    display : none;
+    color : white;
+    text-align : center;
+    padding : 12px;
+    padding-left: 1px;
+    text-decoration : none;
+}
+
+.profile a {
+    display : none;
+    color : white;
+    text-align : center;
+    padding : 12px;
+    padding-left: 1px;
+    text-decoration : none;
+}
+
 .active5 {
     background-color : #5753e1;
 }

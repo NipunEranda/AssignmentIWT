@@ -1,13 +1,13 @@
-<?php 
+<?php
 session_start();
 require 'config.php';
 ?>
 <script src = "js/homepage.js"></script>
 <ul id = "heading_ul">
     <li id = "header_li"><a class = "active1" href = "Homepage.php">Home</a></li>
+    <li id = "header_li" class = "hidden"><a class = "active3 hidden" href = "myAccount.php">My Account</a></li>
+    <li id = "header_li" class = "hidden"><a class = "active4 hidden" href = "feedBack.php">Rate Us</a></li>
     <li id = "header_li"><a class = "active2" href = "aboutUs.php">About Us</a></li>
-    <li id = "header_li"><a class = "active3" href = "myAccount.php">My Account</a></li>
-    <li id = "header_li"><a class = "active4" href = "feedBack.php">Rate Us</a></li>
     <li id = "header_li"><a class = "active5" href = "Contact.php">Contact Us</a></li>
     <li class = "lg"><a href = "components/logout.php">Log out</a></li>
     <li class = "profile"><a href = "myAccount.php"><label><?php echo $_SESSION['username']?></label></a></li>
@@ -15,14 +15,14 @@ require 'config.php';
 
 
 <div class = "header1">
-    <img src = "images/ico4.png" width = "200" height = "200" alt = "icon">
+        <img src = "images/ico4.png" width = "200" height = "200" alt = "icon">
 
-    <label class = "topic">GIFT BAY</label>
-    <table style = "float : right; padding : 4% 0px 0px 1%;">
-        <tr><td><a href = "myCart.html" style = "text-decoration: none; color: white; cursor: pointer;"><label class = "hidden">My cart</label></a> &nbsp;&nbsp;&nbsp;</td></tr>
-        <tr><td><label id = "no_items"></label>&nbsp;<label id = "item" class="hidden">Empty</label></td></tr>
-    </table>
-    <i class="fa fa-shopping-cart" style="font-size:75px; color:white; float: right; margin-top: 3%;"></i>
+        <label class = "topic">GIFT BAY</label>
+        <table style = "float : right; padding : 4% 0px 0px 1%;">
+            <tr><td></td></tr>
+            <tr><td><a href = "cart.php" style = "text-decoration: none; color: white; cursor: pointer;"><label class = "hidden">My cart</label></a> &nbsp;&nbsp;&nbsp;</td></tr>
+        </table>
+        <i class="fa fa-shopping-cart" style="font-size:75px; color:white; float: right; margin-top: 3%;"></i>
 </div>
 <div class="navbar">
     <div class = "dropDown">

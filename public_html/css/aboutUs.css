@@ -1,3 +1,11 @@
+.lg a {
+    display : none;
+}
+
+.profile a {
+    display : none;
+}
+
 .active2 {
     background-color : #5753e1;
 }

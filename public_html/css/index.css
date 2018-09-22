@@ -4,20 +4,10 @@
 
 .lg a {
     display : none;
-    color : white;
-    text-align : center;
-    padding : 12px;
-    padding-left: 1px;
-    text-decoration : none;
 }
 
 .profile a {
     display : none;
-    color : white;
-    text-align : center;
-    padding : 12px;
-    padding-left: 1px;
-    text-decoration : none;
 }
 
 .sign{
@@ -202,10 +192,14 @@ div a{
     background-color: lightgray;
 }
 
-.header1 table .hidden{
+.header1 i{
     display: none;
 }
 
-.header1 i{
+.no_items{
+    display: none;
+}
+
+.hidden{
     display: none;
 }
