@@ -225,6 +225,21 @@ div a {
     float: right;
 }
 
+.categories label{
+    font-size: 20px;
+}
+
+.categories{
+    margin:35% 0px 25% 3%;
+    border-radius: 15px;
+    line-height: 25px;
+    float: left;
+    padding: 30px 40px 30px 40px;
+    color: black;
+    border: 1px solid black;
+    background:rgba(255,255,255,.5);
+}
+
 .footerhr{
     border-style: solid ;
     color: white;

@@ -1,3 +1,10 @@
+.lg a {
+    display : none;
+}
+
+.profile a {
+    display : none;
+}
 
 #maincontainer{
     margin-top: 100px;

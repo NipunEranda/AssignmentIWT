@@ -12,6 +12,7 @@ include './components/addItems.php';
         <link rel = "stylesheet" href = "css/styles.css">
         <link rel = "stylesheet" href = "css/Homepage.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src = "js/homepage.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body background = "images/backgrounds/background2.jpg">
@@ -145,7 +146,7 @@ include './components/addItems.php';
             <!--Body Ends-->
         </div>
 
-<?php include_once 'components/footer.php'; ?>
+        <?php include_once 'components/footer.php'; ?>
 
     </body>
 </html>

@@ -181,6 +181,10 @@ div a{
     text-decoration: none;
 }
 
+.tablinks{
+    cursor: pointer;
+}
+
 .pagin a .active{
     background-color: #f83296;
     color: white;

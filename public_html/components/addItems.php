@@ -18,6 +18,6 @@ for ($i = 1; $i < 10; ++$i) {
         }
         $insert = "INSERT INTO cart VALUES($id, '$user', $i, '$image', '$itemName', '$price', 1, '$price')";
         $results = $con->query($insert);
-    }
+}
 }
 ?>

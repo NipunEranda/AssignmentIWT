@@ -14,4 +14,4 @@ if (isset($_POST['1'])) {
     $insert = "INSERT INTO myCart values(1, $itemName, $price, 1, $price)";
     $results = $con->query($insert);
 }
-    ?>
+?>

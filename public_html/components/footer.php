@@ -1,10 +1,12 @@
-<?php ?>
+<?php
+$con ->close();
+?>
 <div>
     <div class="footercontainer0">
 
         <div class = "footercontainer1">
             <table>
-                <tr><th colspan="2"><label>BROWSE MORE GIFTS</label></th><tr>
+                <tr><th colspan="2"><label style="color: white;">BROWSE MORE GIFTS</label></th><tr>
                 <tr><th colspan="3"><hr class = "footerhr"></th><tr>
                 <tr><td><label><a href = "birthdays.php">For Birthdays</a></label></td><td></td><td><label><a href = "cakes.html">Cakes</a></label></td></tr>
                 <tr><td><label><a  href = "anniversary.php">For Anniversaries</a></label></td><td></td><td><label><a href = "flowers.html">Flowers</a></label></td></tr>

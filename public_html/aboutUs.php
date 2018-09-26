@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php include 'components/header.php'; ?>
-<?php include 'components/logincheck.php';?>
 <html>
     <head>
         <title>About Us</title>
