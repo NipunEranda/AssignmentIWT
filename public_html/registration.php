@@ -2,6 +2,55 @@
 <?php include 'components/header.php'; ?>
 <?php include 'components/config.php'; ?>
 
+<?php
+if (isset($_POST['submit'])) {
+
+    $cou = "SELECT * FROM users";
+    $res = $con->query($cou);
+    $count = $res->num_rows;
+    $userCount = $count + 1;
+    
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+    $email = $_POST['email'];
+    $telNo = $_POST['telNo'];
+    $CompanyName = $_POST['CompanyName'];
+    $CompanyId = $_POST['CompanyId'];
+    
+    if($CompanyName == NULL && $CompanyName == NULL){
+        $CompanyName = 'NULL';
+        $CompanyId = 'NULL';
+    }else if($CompanyName){
+        $CompanyName = 'NULL';
+    }else if($CompanyId == NULL){
+        $CompanyId = 'NULL';
+    }
+    
+    $Address = $_POST['Address'];
+    $postalCode = $_POST['postalCode'];
+    $country = $_POST['country'];
+    $password = $_POST['password'];
+    $cpassword = $_POST['Cpassword'];
+
+    if (!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['email']) && !empty($_POST['telNo']) && !empty($_POST['Address'])  && !empty($_POST['postalCode']) && !empty($_POST['country'])) {
+        if ($password == $cpassword) {
+            $sql = "INSERT INTO users VALUES($userCount, '$firstName', '$lastName', '$email', '$telNo', '$Address', '$CompanyName', '$CompanyId', '$postalCode', '$country', '$password', '0')";
+            $result = $con->query($sql);
+            if($result == true){
+            header('location: Homepage.php');
+            }
+        } else {
+            ?>
+            <center><div id = "msg"><label>Fill again.</label></div></center>
+        <?php }
+    } else {
+        ?>
+        <center><div id = "msg"><label>Fill again.</label></div></center>
+        <?php
+    }
+}
+?>
+
 <html>
     <head>
         <title>Registration</title>
@@ -17,7 +66,7 @@
             <!--BODY STARTS-->
 
             <div class = "createAccount">
-                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" onsubmit = "validateForm()">
+                <form name ="form1" action="" method="POST" >
                     <label>Create Account</label>
                     <div>
                         <div class = "form">
@@ -31,15 +80,22 @@
                                 </ul>
                                 <li>Address</li>
                                 <ul style = "list-style-type: none;">
-                                    <li>Company Name <input class="frmInput" type="text" name="CompanyName" id = "CompanyName"></li>
-                                    <li>Company ID <input class="frmInput" type="text" name="CompanyId" id = "CompanyId"></li>
+                                    <li>Company Name(Optional) <input class="frmInput" type="text" name="CompanyName" id = "CompanyName"></li>
+                                    <li>Company ID(Optional) <input class="frmInput" type="text" name="CompanyId" id = "CompanyId"></li>
                                     <li>Address <input class="frmInput" type="text" name="Address" id = "Address"></li>
                                     <li>Postal Code <input class="frmInput" type="text" name="postalCode" id = "postalCode"></li>
                                     <li>Country
                                         <select class="frmInput" name="country">
-                                            <option>Sri Lanka</option>
+                                            <option>SriLanka</option>
                                             <option>India</option>
                                             <option>china</option>
+                                            <option>Australia</option>
+                                            <option>Brazil</option>
+                                            <option>Canada</option>
+                                            <option>Indonesia</option>
+                                            <option>Qatar</option>
+                                            <option>Singapore</option>
+                                            <option>Zimbabwe</option>
                                         </select>
                                     </li>
                                 </ul>
@@ -54,7 +110,7 @@
 
                         <div>
                             <input class="frmButton" type="reset">
-                            <input class="frmButton" type="submit" value="Register" style = "margin-right: 3%;">
+                            <input class="frmButton" type="submit" value="Register" name ="submit" style = "margin-right: 3%;" onclick = "validateForm()">
                         </div>
                     </div>
                 </form>
@@ -63,7 +119,7 @@
             <!--Body Ends-->
         </div>
 
-        <?php include_once 'components/footer.php'; ?>
+<?php include_once 'components/footer.php'; ?>
 
     </body>
 </html>

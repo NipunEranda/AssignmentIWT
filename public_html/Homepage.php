@@ -3,7 +3,17 @@
 <?php
 include 'components/header.php';
 include 'components/logincheck.php';
-include './components/addItems.php';
+$userId = $_SESSION['id'];
+
+$sqlCurrency = "SELECT * FROM country_units WHERE country = (SELECT country FROM users WHERE user_id = $userId)";
+$currencyRes = $con -> query($sqlCurrency);
+while($row = $currencyRes->fetch_assoc()){
+    $_SESSION['currency'] = $row['currency_unit'];
+    $_SESSION['currencyName'] = $row['unitName'];
+}
+
+$currency = $_SESSION['currency'];
+$currencyName = $_SESSION['currencyName'];
 ?>
 
 <html>
@@ -36,7 +46,6 @@ include './components/addItems.php';
                 </div>
             </div>
 
-            <form action = "" method = "post">
                 <div class="middle column">
 
                     <div class="fling-minislide">
@@ -45,69 +54,74 @@ include './components/addItems.php';
                         <img src="images/slide3.jpg" alt="Slide 2" style = "height: 350px;">
                         <img src="images/slide4.jpg" alt="Slide 1" style = "height: 350px;" >
                     </div>
+                    
+                    <?php
+                    
+                    for($i=0; $i < 3; ++$i){ 
+                        ?> 
+                    
                     <div class = "image_left column">
-                        <img src = "images/bcake1.jpg" width ="100%" style = "border: 1px solid lightgray;"><br/>
-                        <center><label>A red cake with a teddy bear</label></center><br/>
-                        <center><label id = "price1">$10.45  (Rs.1,600.00)</label></center><br/>
-                        <button class = "div_button1" onclick = "alert_cart()" id = "1" name = "1"><i class="fa fa-shopping-cart" style="font-size:15px; color:black;margin-right: 5px;"></i>Add to cart</button>
+                        <?php 
+                        $items = $i * 3;
+                        ++$items;
+                        $sql1 = "SELECT * FROM item WHERE itemID = $items";
+                        $result1 = $con -> query($sql1);
+                        while ($row1 = $result1->fetch_assoc()) {
+                                    $itemId = $row1["itemID"];
+                                    $itemName = $row1["itemName"];
+                                    $price = $row1["itemPrice"];
+                                    $qty = $row1["quantity"];
+                                    $total = $row1["price"] * $qty;
+                                    $image = $row1["image"];
+                        }
+                        ?>
+                        <img src = "<?php echo $image ?>" width ="100%" style = "border: 1px solid lightgray;">
+                        <center><label><?php echo $itemName ?></label></center>
+                        <center><label id = "price1"><?php echo $currencyName . ' : ' . number_format((float)  $price * $currency, 2, '.', '')?></label></center><br/>
+                        <a id ="div_button" href = "cart.php?add=<?php echo $items ?>" onclick="alert_cart()"><i class="fa fa-shopping-cart" style="font-size:15px; color:black;margin-right: 5px;"></i>Add to the cart</a>
                     </div>
 
                     <div class = "image_middle column">
-                        <img src = "images/bear.jpg" width ="100%" style = "border : 1px solid lightgrey;"><br/>
-                        <center><label>Teddy</label></center><br/>
-                        <center><label id = "price1">$4.24  (Rs.650.00)</label></center><br/>
-                        <button class = "div_button1" onclick = "alert_cart()" id = "2" name = "2"><i class="fa fa-shopping-cart" style="font-size:15px; color:black;margin-right: 5px;"></i>Add to cart</button>
+                        <?php 
+                        ++$items;
+                        $sql2 = "SELECT * FROM item WHERE itemID = $items";
+                        $result2 = $con -> query($sql2);
+                        while ($row2 = $result2->fetch_assoc()) {
+                                    $itemId = $row2["itemID"];
+                                    $itemName = $row2["itemName"];
+                                    $price = $row2["itemPrice"];
+                                    $qty = $row2["quantity"];
+                                    $total = $row2["price"] * $qty;
+                                    $image = $row2["image"];
+                        }      
+                        ?>
+                        <img src = "<?php echo $image ?>" width ="100%" style = "border : 1px solid lightgrey;">
+                        <center><label><?php echo $itemName ?></label></center>
+                        <center><label id = "price1"><?php echo $currencyName . ' : ' . number_format((float)  $price * $currency, 2, '.', '') ?></label></center><br/>
+                        <a id ="div_button" href = "cart.php?add=<?php echo $items ?>" onclick="alert_cart()"><i class="fa fa-shopping-cart" style="font-size:15px; color:black;margin-right: 5px;"></i>Add to the cart</a>
                     </div>
 
                     <div class = "image_right column">
-                        <img src = "images/card1.jpg" width ="100%" style = "border : 1px solid lightgrey;"><br/>
-                        <center><label>Best Mom</label></center><br/>
-                        <center><label id = "price1">$1.57  (Rs.240.00)</label></center><br/>
-                        <button  class = "div_button1" onclick = "alert_cart()" id = "3"name = "3"><i class="fa fa-shopping-cart" style="font-size:15px; color:black;margin-right: 5px;"></i>Add to cart</button>
+                        <?php ++$items;
+                        $sql3 = "SELECT * FROM item WHERE itemID = $items";
+                        $result3 = $con -> query($sql3);
+                        while ($row3 = $result3->fetch_assoc()) {
+                                    $itemId = $row3["itemID"];
+                                    $itemName = $row3["itemName"];
+                                    $price = $row3["itemPrice"];
+                                    $qty = $row3["quantity"];
+                                    $total = $row3["price"] * $qty;
+                                    $image = $row3["image"];
+                        }
+                        ?>
+                        <img src = "<?php echo $image ?>" width ="100%" style = "border : 1px solid lightgrey;">
+                        <center><label><?php echo $itemName ?></label></center>
+                        <center><label id = "price1"><?php echo $currencyName . ' : ' . number_format((float)  $price * $currency, 2, '.', '') ?></label></center><br/>
+                        <a id ="div_button" href = "cart.php?add=<?php echo $items ?>" onclick="alert_cart()"><i class="fa fa-shopping-cart" style="font-size:15px; color:black;margin-right: 5px;"></i>Add to the cart</a>
                     </div>
-
-                    <div class = "image_left column">
-                        <img src = "images/card2.jpg" width ="100%" style = "border: 1px solid lightgrey;"><br/>
-                        <center><label>I &hearts; THATHTHI</label></center><br/>
-                        <center><label id = "price1">$1.37  (Rs.210.00)</label></center><br/>
-                        <button class = "div_button1" onclick = "alert_cart()" id = "4"name = "4"><i class="fa fa-shopping-cart" style="font-size:15px; color:black;margin-right: 5px;"></i>Add to cart</button>
-                    </div>
-
-                    <div class = "image_middle column">
-                        <img src = "images/choco1.jpg" width ="100%" style = "border : 1px solid lightgrey;"><br/>
-                        <center><label>Ferrero Rocher 30 pack</label></center><br/>
-                        <center><label id = "price1">$26.05  (Rs.3,990.00)</label></center><br/>
-                        <button class = "div_button1" onclick = "alert_cart()" id = "5"name = "5"><i class="fa fa-shopping-cart" style="font-size:15px; color:black;margin-right: 5px;"></i>Add to cart</button>
-                    </div>
-
-                    <div class = "image_right column">
-                        <img src = "images/choco3.jpg" width ="100%" style = "border: 1px solid lightgrey;"><br/>
-                        <center><label>Ferrero Rocher pack & flowers</label></center><br/>
-                        <center><label id = "price1">$47.34  (Rs.7,250.00)</label></center><br/>
-                        <button class = "div_button1" onclick = "alert_cart()" id = "6" name = "6"><i class="fa fa-shopping-cart" style="font-size:15px; color:black;margin-right: 5px;"></i>Add to cart</button>
-                    </div>
-
-                    <div class = "image_left column">
-                        <img src = "images/jew1.jpg" width ="100%" style = "border : 1px solid lightgrey;"><br/>
-                        <center><label>Crystal Water Drop</label></center><br/>
-                        <center><label id = "price1">$11.75  (Rs.1,800.00)</label></center><br/>
-                        <button class = "div_button1" onclick = "alert_cart()" id = "7" name = "7"><i class="fa fa-shopping-cart" style="font-size:15px; color:black;margin-right: 5px;"></i>Add to cart</button>
-                    </div>
-
-                    <div class = "image_middle column">
-                        <img src = "images/dairymilk.jpg" width ="100%" style = "border : 1px solid lightgrey;"><br/>
-                        <center><label>Cadbury Dairy Milk</label></center><br/>
-                        <center><label id = "price1">$9.27  (Rs.1,420.00)</label></center><br/>
-                        <button class = "div_button1" onclick = "alert_cart()" id = "8" name = "8"><i class="fa fa-shopping-cart" style="font-size:15px; color:black;margin-right: 5px;"></i>Add to cart</button>
-                    </div>
-
-
-                    <div class = "image_right column">
-                        <img src = "images/Fogg_scent.jpg" width ="100%" style = "border : 1px solid lightgrey;"><br/>
-                        <center><label>Fogg Scent I Am Queen</label></center><br/>
-                        <center><label id = "price1">$13.71  (Rs.2,100.00)</label></center><br/>
-                        <button class = "div_button1" onclick = "alert_cart()" id = "9" name = "9"><i class="fa fa-shopping-cart" style="font-size:15px; color:black;margin-right: 5px;"></i>Add to cart</button>
-                    </div>
+                    
+                    <?php 
+                    } ?>
 
                     <center>
                         <div class = "pagin">
@@ -140,7 +154,6 @@ include './components/addItems.php';
                         <a href = "discountoffers">Discount offers</a><br/>
                         <a href = "categories">more</a><br/>
                     </center>
-                </form>
             </div>
 
             <!--Body Ends-->

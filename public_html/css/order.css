@@ -1,0 +1,48 @@
+.topBox{
+    background:rgba(0,0,0,.9);
+    color: white;
+}
+
+
+#paymentbtn{
+    margin-right: 17.5%;
+    margin-top: 10px;
+    margin-bottom: 6%;
+    padding: 8px;
+    float: right;
+    background-color: black;
+    color: white;
+    width: 10%;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+#paymentbtn:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #4CAF50;
+    transition-duration: 0.5s;
+}
+
+
+#back{
+    margin-right: 0.5%;
+    margin-top: 10px;
+    margin-bottom: 6%;
+    padding: 8px;
+    float: right;
+    background-color: grey;
+    color: black;
+    width: 10%;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+#back:hover{
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    transition-duration: 0.5s;
+}

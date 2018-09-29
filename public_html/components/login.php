@@ -7,12 +7,12 @@ if (isset($_POST['usr_email']) and isset($_POST['usr_password'])) {
     $email = $_POST['usr_email'];
     $password = $_POST['usr_password'];
 
-    $sql = "SELECT customer_id, firstName FROM customer WHERE email = '$email' and pass = '$password'";
+    $sql = "SELECT * FROM users WHERE email = '$email' and pass = '$password'";
     $result = $con->query($sql);
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            $id = $row["customer_id"];
+            $id = $row["user_id"];
             $_SESSION['id'] = $id;
             $user = $row["firstName"];
             $_SESSION['username'] = $user;
@@ -26,7 +26,8 @@ if (isset($_POST['usr_email']) and isset($_POST['usr_password'])) {
         }
     } else {
         $error = "Incorrect username or password";
-        header("location: index.php");
+        ?>
+<?php
     }
 }
 

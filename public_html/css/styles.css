@@ -305,3 +305,42 @@ div a {
     transition-duration: 0.3s;
     opacity: 0.5;
 }
+
+#div_button{
+    font-size: 14px;
+    background-color: #4CAF50;
+    padding: 5% 2% 0% 2%;
+    margin-left: 25%;
+    margin-bottom: 3%;
+    color: black;
+    display: block;
+    height: 30px;
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+}
+
+#div_button:hover{
+    color: white;
+    background-color: #4CAF50;
+    opacity: 0.8;
+}
+
+
+#msg{
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 3px  3px;
+    height: 30px;
+    width: 25%;
+    background:rgba(255,0,0,0.9);
+}
+
+#msg:hover{
+    cursor: pointer;
+    background:rgba(255,100,0,0.9);
+    color: black;
+    transition-duration: 0.5s;
+}

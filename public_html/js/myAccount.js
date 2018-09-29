@@ -8,5 +8,7 @@ function validateForm() {
     if (a == "" || b == "" || c == "" || d == "" || e == "" || f == "") {
         alert("Incomplete Details");
         return false;
+    }else{
+        alert("Log out to make changes.");
     }
 }
