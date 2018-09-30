@@ -1,5 +1,5 @@
 .lg a {
-    display : none;
+    display : block;
     color : white;
     text-align : center;
     padding : 12px;
@@ -8,7 +8,7 @@
 }
 
 .profile a {
-    display : none;
+    display : block;
     color : white;
     text-align : center;
     padding : 12px;

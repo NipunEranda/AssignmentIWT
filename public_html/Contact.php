@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <?php include 'components/header.php'; ?>
-
+<?php if (empty($_SESSION['username'])) { ?>
+    <script>document.getElementById('log').style.display = 'none';</script>
+    <script>document.getElementById('profile').style.display = 'none';</script>
+    <?php
+}
+?>
 <html>
     <head>
         <title>Contact Us</title>
@@ -8,9 +13,10 @@
         <link rel = "stylesheet" href = "css/contactUs.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src = "js/index.js"></script>
     </head>
     <body background = "images/backgrounds/contactUs.jpg">
-        
+
         <div id="maincontainer1">
             <!--BODY STARTS-->
 
@@ -34,6 +40,6 @@
         </div>
 
         <?php include_once 'components/footer.php'; ?>
-        
+
     </body>
 </html>

@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <?php include 'components/header.php'; ?>
+<?php if (empty($_SESSION['username'])) { ?>
+    <script>document.getElementById('log').style.display = 'none';</script>
+    <script>document.getElementById('profile').style.display = 'none';</script>
+    <?php
+}
+?>
 <html>
     <head>
         <title>About Us</title>
@@ -8,6 +14,7 @@
         <link rel = "stylesheet" href = "css/floatingForm.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src = "js/floatingForm.js"></script>
+        <script src = "js/index.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body background = "images/backgrounds/background9.jpg">
@@ -101,7 +108,7 @@
                                             <p>Whether you've simply forgotten your password and need to reset it,<br/> or want to make a change for security reasons, it's easy to change your Gift Bay password. To protect your account though, we'll always first ask you to confirm your identity using email or text.</p>
                                             <h4>To change your password, select the button below and then follow these steps:</h4><br/><br/>
 
-                                            <div class = "details">
+                                            <div class = "liset">
                                                 <ol>
                                                     <li>Enter your email address or username and select Continue.</li><br/>
                                                     <li>Choose how you'd like to change your password:</li><br/>
@@ -133,7 +140,7 @@
                                                 make sure to update your contact details so your Gift Bay account information remains correct.</p>
                                             <h3>How to change your registered email address</h3>
 
-                                            <div class = "details">
+                                            <div class = "liset">
                                                 <p>Your registered email address is where we'll send you notifications on all of your account activity, so it's important to keep it up to date.
                                                     <br/>If you need to change your registered email address, select the button below or follow these instructions:</p><br/>
                                                 <ol>
@@ -149,37 +156,52 @@
                                     </div>
                                 </div>
 
-                        </div>
+                            </div>
                     </center>
                 </div>
 
                 <div class = "about_middle left">
                     <center>
                         <div id = "img_container">
-                            <img src = "images/owner.jpg" width="100%" onclick="document.getElementById('au3').style.display = 'block'">
+                            <img src = "images/owner.jpg" width="100%" onclick="document.getElementById('Owner').style.display = 'block'">
                             <br/><br/>
                             <label>Owner Details</label>
                         </div>
 
-                        <div id = "au3" class = "modal">
+                        <div id = "Owner" class = "modal">
 
                             <div class="modal-content animate">
 
                                 <div class="top">
-                                    <span onclick="document.getElementById('au3').style.display = 'none'" class="close" title="Close Modal">&times;</span>
+                                    <span onclick="document.getElementById('Owner').style.display = 'none'" class="close" title="Close Modal">&times;</span>
                                 </div>
 
                                 <div class="container">
-                                    <label for="uname"><b>Username</b></label>
-                                    <input type="text" placeholder="Enter Username" name="uname" required>
+                                    <?php
+                                    $selectOwner = "SELECT * FROM users WHERE is_owner = '1'";
+                                    $result = $con->query($selectOwner);
+                                    if ($result->num_rows > 0) {
+                                        ?>
+                                        <?php
+                                        while ($row = $result->fetch_assoc()) {
+                                            $tele = $row['tele'];
+                                            $email = $row['email'];
+                                            $fname = $row['firstName'];
+                                            $lname = $row['lastName'];
+                                            ?>
 
-                                    <label for="psw"><b>Password</b></label>
-                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                            <img class = "profiles" src = "<?php echo $row['image'] ?>">
 
-                                    <button type="submit">Login</button>
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                                    </label>
+                                        <?php }
+                                    }
+                                    ?><br/>
+
+                                    <label style = "font-size: 60px;"><?php echo $fname . " " . $lname ?></label>
+                                    <p style = "font-size: 30px;">Creator of the GiftBay Online Gift shop.</p>
+
+                                    <label>Mobile : <?php echo $tele ?></label><br/>
+                                    <label>Email : <?php echo $email ?></label>
+
                                 </div>
 
                             </div>
@@ -188,30 +210,21 @@
 
                     <center>
                         <div id = "img_container">
-                            <img src = "images/privacy_policy.jpg" width="100%" onclick="document.getElementById('au4').style.display = 'block'">
+                            <img src = "images/privacy_policy.jpg" width="100%" onclick="document.getElementById('Policy').style.display = 'block'">
                             <br/><br/>
                             <label>Privacy Policy</label>
                         </div>
 
-                        <div id = "au4" class = "modal">
+                        <div id = "Policy" class = "modal">
 
                             <div class="modal-content animate">
 
                                 <div class="top">
-                                    <span onclick="document.getElementById('au4').style.display = 'none'" class="close" title="Close Modal">&times;</span>
+                                    <span onclick="document.getElementById('Policy').style.display = 'none'" class="close" title="Close Modal">&times;</span>
                                 </div>
 
                                 <div class="container">
-                                    <label for="uname"><b>Username</b></label>
-                                    <input type="text" placeholder="Enter Username" name="uname" required>
-
-                                    <label for="psw"><b>Password</b></label>
-                                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                    <button type="submit">Login</button>
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                                    </label>
+                                    <h1>Privacy Policy</h1>
                                 </div>
 
                             </div>
@@ -237,16 +250,16 @@
                                 </div>
 
                                 <div class="container">
-                                    <h1>Our Staff</h1><br/>
+                                    <label style = "font-size: 50px;">Our Staff</label><br/><br/><br/>
                                     <?php
                                     $select = "SELECT * FROM users WHERE in_staff = '1' or is_owner = '1'";
-                                    $res = $con -> query($select);
-                                    if($res -> num_rows > 0){
-                                    ?>
-                                    <?php while($row = $res -> fetch_assoc()){ ?>
-                                    <img class = "profiles" src = "<?php echo $row['image'] ?>">
-                                    <?php } ?>
-                                    <?php } ?>
+                                    $res = $con->query($select);
+                                    if ($res->num_rows > 0) {
+                                        ?>
+                                        <?php while ($row = $res->fetch_assoc()) { ?>
+                                            <img class = "profiles" src = "<?php echo $row['image'] ?>">
+                                        <?php } ?>
+<?php } ?>
                                 </div>
 
                             </div>
@@ -267,7 +280,7 @@
             <!--Body Ends-->
         </div>
 
-        <?php include_once 'components/footer.php'; ?>
+<?php include_once 'components/footer.php'; ?>
 
     </body>
 </html>

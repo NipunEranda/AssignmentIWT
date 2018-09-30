@@ -17,11 +17,6 @@ $user = $_SESSION['id'];
                             <center>
                                 <div id = "cart_table">
                                     <table border = "1">
-                                        <tr>
-                                            <th>View</th>
-                                            <th>Name</th>
-                                            <th>Price</th>
-                                        </tr>
                                         <?php
                                         $_SESSION['sum'] = 0;
                                         $cart = array();
@@ -35,15 +30,19 @@ $user = $_SESSION['id'];
                                             <td><center><label><?php echo $_SESSION['currencyName'] ?> : <?php echo number_format((float) $item['itemPrice'] * $_SESSION['currency'], 2, '.', ''); ?></label></center></td>
                                             </tr>
                                             <?php
+                                            $_SESSION['sum'] += $item['itemPrice'] * $_SESSION['currency'];
                                         }
-                                        ?>    
+                                        ?> 
+                                            <tr>   
+                                                <td colspan = "2"></td><td><center><h4><label id = "div_total">Total : <?php echo $_SESSION['currencyName'] ?>  <?php echo number_format((float) $_SESSION['sum'], 2, '.', ''); ?></label></h4></center></td>
+        </tr>
                                     </table>
                                 </div>
                             </center>
-                        <div class = "buttonset">
-                            <a id ="paymentbtn">payment Methods</a>   
-                            <a id ="back" href = "cart.php">Back to changes</a> 
-                        </div>
+                            <div class = "buttonset">
+                                <a id ="paymentbtn" href = "payment.php">payment Methods</a>   
+                                <a id ="back" href = "cart.php">Back to changes</a> 
+                            </div>
                             <?php
                         } else {
                             echo 'Your cart is empty';

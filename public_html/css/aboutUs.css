@@ -1,9 +1,19 @@
 .lg a {
-    display : none;
+    display : block;
+    color : white;
+    text-align : center;
+    padding : 12px;
+    padding-left: 1px;
+    text-decoration : none;
 }
 
 .profile a {
-    display : none;
+    display : block;
+    color : white;
+    text-align : center;
+    padding : 12px;
+    padding-left: 1px;
+    text-decoration : none;
 }
 
 .active2 {

@@ -71,7 +71,7 @@ $currencyName = $_SESSION['currencyName'];
                                     $itemName = $row1["itemName"];
                                     $price = $row1["itemPrice"];
                                     $qty = $row1["quantity"];
-                                    $total = $row1["price"] * $qty;
+                                    $total = $row1["itemPrice"] * $qty;
                                     $image = $row1["image"];
                         }
                         ?>
@@ -91,7 +91,7 @@ $currencyName = $_SESSION['currencyName'];
                                     $itemName = $row2["itemName"];
                                     $price = $row2["itemPrice"];
                                     $qty = $row2["quantity"];
-                                    $total = $row2["price"] * $qty;
+                                    $total = $row2["itemPrice"] * $qty;
                                     $image = $row2["image"];
                         }      
                         ?>
@@ -110,7 +110,7 @@ $currencyName = $_SESSION['currencyName'];
                                     $itemName = $row3["itemName"];
                                     $price = $row3["itemPrice"];
                                     $qty = $row3["quantity"];
-                                    $total = $row3["price"] * $qty;
+                                    $total = $row3["itemPrice"] * $qty;
                                     $image = $row3["image"];
                         }
                         ?>

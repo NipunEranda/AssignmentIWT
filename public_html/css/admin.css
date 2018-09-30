@@ -1,0 +1,52 @@
+.category{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+
+
+.table_container1{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-right: 3%;
+    background-color: lightblue;
+    width: 45%;
+    margin-left: 3.5%;
+    float: left;
+}
+
+.table_container2{
+    margin-top: 4%;
+    background-color: lightblue;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 45%;
+    float: left;
+}
+
+.addCategory{
+    width: 70%;
+}
+
+.addCategory input[type = text]{
+    margin-right: 5%;
+    float: right;
+    width: 50%;
+}
+
+.addCategory label{
+    float: left;
+}
+
+#deleteButton{
+    background-color: lightblue;
+    color: black;
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+#deleteButton:hover{
+    background-color: red;
+}

@@ -2,18 +2,18 @@
 session_start();
 require 'config.php';
 ?>
-<script src = "js/homepage.js"></script>
-<script src = "js/index.js"></script>
+<script src = "../js/homepage.js"></script>
+<script src = "../js/index.js"></script>
 <ul id = "heading_ul">
     <li id = "header_li"><a class = "active1" href = "Homepage.php">Home</a></li>
     <li id = "header_li"><a class = "active3" href = "myAccount.php" <?php if(empty($_SESSION['username'])){ ?> onclick="alert_guest_sign()" <?php }?>>My Account</a></li>
     <li id = "header_li"><a class = "active4" href = "feedBack.php" <?php if(empty($_SESSION['username'])){ ?> onclick="alert_guest_rate()" <?php }?>>Rate Us</a></li>
     <li id = "header_li"><a class = "active2" href = "aboutUs.php">About Us</a></li>
     <li id = "header_li"><a class = "active5" href = "Contact.php">Contact Us</a></li>
-    <li class = "lg"><a href = "components/logout.php">Log out</a></li>
-    <li class = "profile"><a href = "myAccount.php"><label><?php echo $_SESSION['username']?></label></a></li>
+    <li class = "lg" id = "log"><a href = "components/logout.php">Log out</a></li>
+    <li class = "profile" id = "profile"><a href = "myAccount.php"><label><?php echo $_SESSION['username']?></label></a></li>
 </ul>
-
+ 
 
 <div class = "header1">
         <img src = "images/ico4.png" width = "200" height = "200" alt = "icon">
@@ -44,7 +44,10 @@ require 'config.php';
             <a href = "cakes.html">Cakes</a>
         </div>
     </div>
-    <div class = "right position">
-        <input class="search" tyoe = "text" placeholder="Search..">
+    <div class = "right searchDiv">
+      <form action="itemsearch.php" method="POST">
+	<input type="text" name="searchtext" class="search" placeholder="Search here" >
+	<button type="submit" name="search" value="Find">&#128269 </button>
+	</form>
     </div>
 </div>

@@ -32,7 +32,6 @@ $con ->close();
 
         <div class = "footercontainer0" style = "height: 30px;text-align: left;">
             <label>Copyright &copy; 2018 Gift Bay Powered by SLIIT. Online shopping for Sri Lankans around the world.</label>
-            <i class="fa fa-cc-visa"></i>
             <i class="fa fa-cc-paypal"></i>
             <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
             <i class="fa fa-cc-amex"></i>

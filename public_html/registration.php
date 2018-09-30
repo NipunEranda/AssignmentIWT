@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
 
     if (!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['email']) && !empty($_POST['telNo']) && !empty($_POST['Address'])  && !empty($_POST['postalCode']) && !empty($_POST['country'])) {
         if ($password == $cpassword) {
-            $sql = "INSERT INTO users VALUES($userCount, '$firstName', '$lastName', '$email', '$telNo', '$Address', '$CompanyName', '$CompanyId', '$postalCode', '$country', '$password', '0')";
+            $sql = "INSERT INTO users VALUES($userCount, '$firstName', '$lastName', '$email', '$telNo', '$Address', '$CompanyName', '$CompanyId', '$postalCode', '$country', '$password', 'NULL', '0', '0', '0')";
             $result = $con->query($sql);
             if($result == true){
             header('location: Homepage.php');

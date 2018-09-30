@@ -1,3 +1,11 @@
+#cart_table table{
+    margin-top: 6%;
+    width: 65%;
+    background:rgba(0,0,0,.7);
+    color: white;
+    font-size: 20px;
+}
+
 .topBox{
     background:rgba(0,0,0,.9);
     color: white;

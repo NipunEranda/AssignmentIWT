@@ -1,0 +1,100 @@
+.h3{
+	font-size:150%;
+	color:red;
+	position:absolute;
+	margin-left:9%;
+	margin-top:-20%;
+}
+
+.PaymentMethod
+{
+    margin-bottom: 100px;
+    border-radius: 15px;
+    line-height: 30px;
+    font-size: 19px;
+    width: 40%;
+    float: left;
+    padding: 3%;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-left: 27%;
+}
+
+.paypal {
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background-color:#0000cc;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:20px;
+	font-weight:bold;
+	padding:15px 39px;
+	text-decoration:none;
+}
+.paypal:hover {
+	background-color:#408c99;
+}
+.paypal:active {
+	position:relative;
+	top:1px;
+}
+
+.paycards {
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background-color:#0000cc;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:20px;
+	font-weight:bold;
+	padding:15px 39px;
+	text-decoration:none;
+}
+.paycards:hover {
+	background-color:#408c99;
+}
+.paycards:active {
+	position:relative;
+	top:1px;
+}
+
+.storepickup {
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background-color:#0000cc;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:20px;
+	font-weight:bold;
+	padding:15px 39px;
+	text-decoration:none;
+}
+.storepickup:hover {
+	background-color:#408c99;
+}
+.storepickup:active {
+	position:relative;
+	top:1px;
+}
+
+

@@ -82,13 +82,13 @@ if (isset($_GET['add'])) {
 
                         <?php if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) { ?>
                             <table class="table">
-                                <thead>
+                                <tr>
                                 <th>Image</th>
                                 <th>Name</th>
                                 <th>Quantity</th>
                                 <th>Price</th>
                                 <th>Remove</th>
-                                </thead>
+                                </tr>
                                 <tbody>
                                     <?php
                                     $_SESSION['sum'] = 0;

@@ -86,7 +86,7 @@ html, body {
     font-size: 17px;
     width: 130px;
     float : left;
-  /*  border-right : 1px solid #bbb;*/
+    /*  border-right : 1px solid #bbb;*/
 }
 
 #header_li a {
@@ -139,7 +139,7 @@ html, body {
 }
 
 .dropDownbtn{
-    
+
     background-color: black;
     color: white;
     padding: 16px;
@@ -182,25 +182,28 @@ html, body {
 }
 
 .search{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
     color: black;
     background:rgba(255,255,255,.8);
-    width: 100%;
     height: 25px;
     border: 1px solid white;
-    border-radius: 10px;
+}
+
+
+.searchDiv{
+    margin-top: 13px;
+    margin-right: 1%;
+}
+
+.searchButton{
+    float: right;
 }
 
 .search:hover{
     transition-duration: 0.4s;
     background-color: white;
 }
-
-.position{
-    width: 15%;
-    margin: 9px 25px 12px 12px;
-}
-
-
 /*Create footer*/
 .cart
 {
@@ -286,10 +289,10 @@ div a {
 }
 
 .footercontainer0 i{
-     font-size: 25px;
-     color:white;
-     float: right;
-     margin-right: 5px;
+    font-size: 25px;
+    color:white;
+    float: right;
+    margin-right: 5px;
 }
 
 .footercontainer1 table a{
