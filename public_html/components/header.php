@@ -2,14 +2,16 @@
 session_start();
 require 'config.php';
 ?>
+
 <script src = "../js/homepage.js"></script>
 <script src = "../js/index.js"></script>
 <ul id = "heading_ul">
-    <li id = "header_li"><a class = "active1" href = "Homepage.php">Home</a></li>
-    <li id = "header_li"><a class = "active3" href = "myAccount.php" <?php if(empty($_SESSION['username'])){ ?> onclick="alert_guest_sign()" <?php }?>>My Account</a></li>
-    <li id = "header_li"><a class = "active4" href = "feedBack.php" <?php if(empty($_SESSION['username'])){ ?> onclick="alert_guest_rate()" <?php }?>>Rate Us</a></li>
-    <li id = "header_li"><a class = "active2" href = "aboutUs.php">About Us</a></li>
-    <li id = "header_li"><a class = "active5" href = "Contact.php">Contact Us</a></li>
+    <li class = "header_li"><a class = "active1" href = "Homepage.php">Home</a></li>
+    <li class = "header_li"><a class = "active3" href = "myAccount.php" <?php if(empty($_SESSION['username'])){ ?> onclick="alert_guest_sign()" <?php }?>>My Account</a></li>
+    <li class = "header_li"><a class = "active4" href = "feedBack.php" <?php if(empty($_SESSION['username'])){ ?> onclick="alert_guest_rate()" <?php }?>>Rate Us</a></li>
+    <li class = "header_li"><a class = "active2" href = "aboutUs.php">About Us</a></li>
+    <li class = "header_li"><a class = "active5" href = "Contact.php">Contact Us</a></li>
+    <li class = "header_li" id ="dash"><a class = "active6" href = "adminDashboard.php">Dashboard</a></li>
     <li class = "lg" id = "log"><a href = "components/logout.php">Log out</a></li>
     <li class = "profile" id = "profile"><a href = "myAccount.php"><label><?php echo $_SESSION['username']?></label></a></li>
 </ul>
@@ -51,3 +53,4 @@ require 'config.php';
 	</form>
     </div>
 </div>
+<?php include './components/adminCheck.php'; ?>

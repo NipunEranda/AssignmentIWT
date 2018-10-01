@@ -2,10 +2,9 @@
     background-color : #ccc;
 }
 
-#header_li a:hover {
+.header_li a:hover {
     color: black;
     background-color : #ccc;
-    transition-duration: 0.5s;
 }
 
 .active {

@@ -41,7 +41,7 @@ if(empty($_SESSION['username'])){?>
                             if ($res->num_rows > 0) {
                                 ?>
                                 <center>
-                                    <h1 style = "color: white;">Search Results</h1>
+                                    <h1 style = "color: black;">Search Results</h1>
 
                                     <table border = "1" class="table" style = "text-align: center;">
                                         <tr>

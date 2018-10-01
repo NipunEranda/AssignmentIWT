@@ -4,12 +4,13 @@ $userId = $_SESSION['id'];
 $user = $_SESSION['username'];
 
 $sqlCurrency = "SELECT * FROM country_units WHERE country = (SELECT country FROM users WHERE user_id = $userId)";
-$currencyRes = $con -> query($sqlCurrency);
-while($row = $currencyRes->fetch_assoc()){
+$currencyRes = $con->query($sqlCurrency);
+while ($row = $currencyRes->fetch_assoc()) {
     $_SESSION['currency'] = $row['currency_unit'];
     $_SESSION['currencyName'] = $row['unitName'];
 }
 ?>
+
 <?php
 if (isset($_GET['clear'])) {
     if ($_GET[clear]) {
@@ -17,6 +18,25 @@ if (isset($_GET['clear'])) {
         $clear = "DELETE FROM cart WHERE customerId = $userId";
         $con->query($clear);
         header("location: cart.php");
+        exit();
+    }
+}
+
+if (isset($_GET['add'])) {
+    $item;
+    $sql = "SELECT * FROM item WHERE itemID = " . $_GET['add'];
+    $result = $con->query($sql);
+    $item = mysqli_fetch_assoc($result);
+    
+    if (!isset($_SESSION['cart'])){
+        $_SESSION['cart'] = array();
+    }
+    if (!in_array($item, $_SESSION['cart'])) {
+        array_push($_SESSION['cart'], $item);
+        header("location: cart.php");
+        exit();
+    } else {
+        header("location: Homepage.php");
         exit();
     }
 }
@@ -31,24 +51,6 @@ if (isset($_GET['delete'])) {
             header("location: cart.php");
             exit();
         }
-    }
-}
-
-if (isset($_GET['add'])) {
-    $item;
-    $sql = "SELECT * FROM item WHERE itemID = " . $_GET['add'];
-    $result = $con->query($sql);
-    $item = mysqli_fetch_assoc($result);
-
-    if (!isset($_SESSION['cart']))
-        $_SESSION['cart'] = array();
-    if (!in_array($item, $_SESSION['cart'])) {
-        array_push($_SESSION['cart'], $item);
-        header("location: cart.php");
-        exit();
-    } else {
-        header("location: cart.php");
-        exit();
     }
 }
 ?>
@@ -83,11 +85,11 @@ if (isset($_GET['add'])) {
                         <?php if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) { ?>
                             <table class="table">
                                 <tr>
-                                <th>Image</th>
-                                <th>Name</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                                <th>Remove</th>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Remove</th>
                                 </tr>
                                 <tbody>
                                     <?php

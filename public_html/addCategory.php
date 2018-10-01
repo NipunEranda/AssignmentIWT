@@ -63,7 +63,7 @@ $user = $_SESSION['id'];
                             <h2>Add categories</h2>
                             <div class ="addCategory">
                                 <form action = "" method = "post">
-                                    <label>Input item id :   </label><input type = "text" name = "newItemId"><br/><br/>
+                                    <label>Input item id :   </label><input type = "text" name = "newItemId"/><br/><br/>
                                     <label>Input item Name :   </label><input type = "text" name = "newCategory"/><br/><br/>
                                     <input style = "float: right;margin-right: 5%;" type = "submit" name ="sub" value = "submit"/>
                                 </form>

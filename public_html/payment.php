@@ -42,7 +42,7 @@ $user = $_SESSION['id'];
                 padding: 20px;
                 border: 1px solid #888;
                 width: 50%;
-                height: 120%;
+                height: 90%;
             }
 
             /* The Close Button */

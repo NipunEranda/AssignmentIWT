@@ -2,7 +2,7 @@
     background: linear-gradient(to top, #ff6600 0%, #ff0000 100%);
 }
 
-#header_li a:hover {
+.header_li a:hover {
     transition-duration: 0.3s;
     color: black;
     background: linear-gradient(to top, #ff6600 0%, #ff0000 100%);

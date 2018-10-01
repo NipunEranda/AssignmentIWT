@@ -126,7 +126,8 @@ include 'components/login.php';
 
 
                 <div class="right column sign">
-                    <center><form name = "login" action = "" method = "POST" style = "margin: 8% 5% 15% 5%;">
+                    <center>
+                        <form name = "login" action = "" method = "POST" style = "margin: 8% 5% 15% 5%;">
                             <center>
                                 <h1>LOGIN</h1>
                                 <label style = "float: left;font-size: 20px;">Email</label><input type = "email" id ="usr_email" name="usr_email" placeholder = "Your email" required style = "height: 20px;width: 60%;float: right;"><br/><br/>

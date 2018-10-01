@@ -2,6 +2,11 @@
     background-color : #b00101;
 }
 
+
+.header_li a:hover {
+    background-color : red;
+}
+
 .lg a {
     display : block;
     color : white;

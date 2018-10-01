@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+
+<head>
+<title>Services - Gift Bay</title>
+<link rel="stylesheet" href="css/layout.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+
+<br />
+
+<script src = "../js/homepage.js"></script>
+<script src = "../js/index.js"></script>
+<ul id = "heading_ul">
+    <li id = "header_li"><a class = "active1" href = "Homepage.php">Home</a></li>
+    <li id = "header_li"><a class = "active3" href = "myAccount.php"  onclick="alert_guest_sign()" >My Account</a></li>
+    <li id = "header_li"><a class = "active4" href = "feedBack.php"  onclick="alert_guest_rate()" >Rate Us</a></li>
+    <li id = "header_li"><a class = "active2" href = "aboutUs.php">About Us</a></li>
+    <li id = "header_li"><a class = "active5" href = "Contact.php">Contact Us</a></li>
+    <li class = "lg" id = "log"><a href = "components/logout.php">Log out</a></li>
+    <li class = "profile" id = "profile"><a href = "myAccount.php"><label><br />
+</label></a></li>
+</ul>
+ 
+
+<div class = "header1">
+        <img src = "images/ico4.png" width = "200" height = "200" alt = "icon">
+
+        <label class = "topic">GIFT BAY</label>
+		<br>
+		        <label class = "topic">Services site for Gift Bay</label>
+        <table style = "float : right; padding : 4% 0px 0px 1%;">
+            <tr><td></td></tr>
+            <tr><td><a href = "cart.php" style = "text-decoration: none; color: white; cursor: pointer;"><label class = "hidden">My cart</label></a> &nbsp;&nbsp;&nbsp;</td></tr>
+        </table>
+        <i class="fa fa-shopping-cart" style="font-size:75px; color:white; float: right; margin-top: 3%;"></i>
+</div>
+<div class="navbar">
+    <div class = "dropDown">
+        <button class = "dropDownbtn">All Categories</button>
+        <div class = "dropDown-content">
+            <a href = "baskets.html">Gift Baskets</a>
+            <a href = "forher.html">Gift For Her</a>
+            <a href = "forhim.html">Gift For Him</a>
+            <a href = "books.html">Books</a>
+            <a href = "chocolates.html">Chocolates</a>
+            <a href = "Electronics.html">Electronics</a>
+            <a href = "Perfumes.html">Perfume</a>
+            <a href = "vouchers.html">Gift Vouchers</a>
+            <a href = "teddys.html">Teddy bears</a>
+            <a href = "clothes.html">Clothes</a>
+            <a href = "jewelry.html">Jewelry</a>
+            <a href = "specialdays.html">Fathers Day Gifts</a>
+            <a href = "cakes.html">Cakes</a>
+        </div>
+    </div>
+    <div class = "right searchDiv">
+      <form action="itemsearch.php" method="POST">
+	<input type="text" name="searchtext" class="search" placeholder="Search here" >
+	<button type="submit" name="search" value="Find">&#128269 </button>
+	</form>
+    </div>
+</div><br />
+
+<html>
+    <head>
+        <title>Home page</title>
+        <link rel = "stylesheet" href = "css/styles.css">
+        <link rel = "stylesheet" href = "css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src = "js/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body background = "images/backgrounds/background2.jpg"
+
+
+
+
+</head>
+
+
+
+
+
+<div class="wrapper">
+  <div class="container">
+    <div class="whitebox" id="hpage_services">
+      <div class="block"><img src="images/demo/setting.png" width="46" height="46" alt="" /><strong>General</strong></a>
+        <p> 
+          <a href = "">Announcements</a>
+<br>
+          <a href = "">Community</a>
+<br>
+          <a href = "">Subscriber Discounts</a>
+
+<br>
+          <a href = "">Value Added Tax (VAT)</a>
+<br>
+          <a href = "">Shipping Options</a>
+
+<br>
+          <a href = "">Buyers Protection</a>
+         
+        </a>
+      </p>
+      </div>
+      <div class="block"><img src="images/demo/setting.png" width="46" height="46" alt="" /><strong>Returns</strong></a>
+        </a> <p>
+
+<a href = "">An item that hasn't arrived</a>
+<br>
+<a href = "">Return an item for a refund</a>
+<br>
+<a href = "">Tracking your item</a>
+ <br>
+<a href = "">Canceling an order</a>
+<br>
+<a href = "">Refund Policy</a>	
+ 
+
+</p>
+      </div>
+      <div class="block last"><img src="images/demo/setting.png" width="46" height="46" alt="" /><strong>Account</strong></a>
+        <p> 
+
+<a href = "">Your GiftBay account</a>
+<br>
+<a href = "">Signing up for an GiftBay account</a>
+<br>
+<a href = "">Changing your account settings</a>
+<br>
+<a href = "">Closing your account</a>
+<br>
+<a href = "">Managing your subscriptions</a>
+
+
+
+   </p>
+      </div>
+      <div class="spacer">&nbsp;</div>
+      <div class="block"><img src="images/demo/setting.png" width="46" height="46" alt="" /><strong>Buying</strong></a>
+        <p> 
+<a href = "">How buying works</a>		
+<br>
+<a href = "">Buying as a guest</a>	
+<br>
+<a href = "">Your shopping cart</a>	
+<br>
+<a href = "">Making a Best Offer</a>	
+<br>
+<a href = "">Using the GiftBay App</a>	
+   
+     </p>
+      </div>
+      <div class="block"><img src="images/demo/setting.png" width="46" height="46" alt="" /><strong>Currency</strong></a>
+        <p> 
+<a href = "">Currency Converter</a>	
+<br>
+<a href = "">Currency Rates</a>	
+<br>
+<a href = "">currency converter</a>	
+
+
+
+ </p>
+      </div>
+      <div class="block last"><img src="images/demo/setting.png" width="46" height="46" alt="" /><strong><a href = "">Selling Reference</strong></a>
+        <p>  
+
+
+
+
+  </p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  
+  
+    <div id="hpage_latest">
+      <ul>
+        <li>
+          <div class="imgholder"><a href="#"><img src="images/demo/skype.png" width="260" height="180" alt="" /></a></div>
+          <p><strong>Contact : Skype Line </strong></p>
+          <p>skype/giftbay </p>
+        </li>
+        <li>
+          <div class="imgholder"><a href="#"><img src="images/demo/hot.png" width="260" height="180" alt="" /></a></div>
+          <p><strong>Contact : 24/7 Hot Line </strong></p>
+          <p>011-1234567 </p>
+        </li>
+        <li class="last">
+          <div class="imgholder"><a href="#"><img src="images/demo/chat.png" width="260" height="180" alt="" /></a></div>
+          <p><strong>Contact : Live Chat </strong></p>
+          <p> www.giftbay.com/livechat </p>
+        </li>
+      </ul>
+      <br class="clear" />
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div id="footer">
+    <div class="latestgallery">
+      <h2>Gift Bay Downloads</h2>
+      <ul>
+        <li><a href="#"><img src="images/demo/down.png" width="80" height="80"alt="" /></a></li>
+        <li><a href="#"><img src="images/demo/down.png" width="80" height="80" alt="" /></a></li>
+        <li><a href="#"><img src="images/demo/down.png" width="80" height="80" alt="" /></a></li>
+        <li class="last"><a href="#"><img src="images/demo/down.png" width="80" height="80" alt="" /></a></li>
+        <li><a href="#"><img src="images/demo/down.png" width="80" height="80" alt="" /></a></li>
+        <li><a href="#"><img src="images/demo/down.png" width="80" height="80" /></a></li>
+        <li><a href="#"><img src="images/demo/down.png" width="80" height="80" /></a></li>
+        <li class="last"><a href="#"><img src="images/demo/down.png" width="80" height="80" alt="" /></a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Tools </h2>
+      <ul>
+        <li><a href="#">All About My Gift Bay </a></li>
+        <li><a href="#">Gift Bay Toolbar  </a></li>
+        <li><a href="#">Wireless  </a></li>
+        <li><a href="#">Gift Bay Affiliate Program </a></li>
+        <li><a href="#">Gift Bay Developers Program </a></li>
+        <li class="last"><a href="#">International Trading </a></li>
+      </ul>
+    </div>
+    <div class="footbox last">
+      <h2>Promote your Listings </h2>
+      <ul>
+        <li><a href="#"> Promotional Tools  </a></li>
+        <li><a href="#"> Add link buttons </a></li>
+        <li><a href="#">  Warranty Program  </a></li>
+        <li><a href="#">Seller Central </a></li>
+        <li><a href="#">Seller Education </a></li>
+        <li class="last"><a href="#">Gift Bay Solutions Directory </a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+
+
+ </div>
+
+            <br />
+<div>
+    <div class="footercontainer0">
+
+        <div class = "footercontainer1">
+            <table>
+                <tr><th colspan="2"><label style="color: white;">BROWSE MORE GIFTS</label></th><tr>
+                <tr><th colspan="3"><hr class = "footerhr"></th><tr>
+                <tr><td><label><a href = "birthdays.php">For Birthdays</a></label></td><td></td><td><label><a href = "cakes.html">Cakes</a></label></td></tr>
+                <tr><td><label><a  href = "anniversary.php">For Anniversaries</a></label></td><td></td><td><label><a href = "flowers.html">Flowers</a></label></td></tr>
+                <tr><td><label><a  href = "forlove.php">For Love</a></label></td><td></td><td><label><a href = "chocolates.html">Chocolate</a></label></td></tr>
+                <tr><td><label><a  href = "christmasSeason.php">For Christmas</a></label></td><td></td><td><label><a href = "toys.html">Toys</a></label></td></tr>
+                <tr><td><label><a  href = "forYouandMe.php">You and Me Collection</a></label></td><td></td><td><label><a href = "shoes.html">Shoes</a></label></td></tr>
+            </table>
+        </div>
+
+        <div class = "footercontainer2" id = "social">
+            <br/>
+            <i class="fa fa-send-o" style="font-size:22px;color:white;float: left;"></i>&nbsp;<label>Follow Us</label><br/><br/>
+            <a href = "http://www.instagram.com"><img src = "images/instagram.png" width="25px"/></a>
+            <a href = "http://www.plus.google.com"><img src = "images/g-plus.png" width="25px"/></a>
+            <a href = "http://www.twitter.com"><img src = "images/twitter.png" width="25px"/></a>
+            <a href = "http://www.facebook.com"><img src = "images/facebook.png" width="25px"/></a>
+            <br/><br/>
+            <label>Central office - Sri Lanka</label><br/>
+            <label>Company Address</label><br/>
+            <label>Hotline : 0770514865</label></br>
+            <label>E-mail : giftbay@gmail.com</label>
+        </div>
+
+        <div class = "footercontainer0" style = "height: 30px;text-align: left;">
+            <label>Copyright &copy; 2018 Gift Bay Powered by SLIIT. Online shopping for Sri Lankans around the world.</label>
+            <i class="fa fa-cc-paypal"></i>
+            <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+            <i class="fa fa-cc-amex"></i>
+        </div>
+    </div>
+</div>
+</body>
+</html>

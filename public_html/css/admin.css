@@ -1,3 +1,11 @@
+.active6 {
+    background-color : #5753e1;
+}
+
+.header_li a:hover {
+    background-color : #5753e1;
+}
+
 .category{
     margin-top: 5%;
     margin-bottom: 5%;
@@ -28,6 +36,15 @@
     width: 70%;
 }
 
+#deleteButton{    background-color: lightblue;
+    color: black;
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+
 .addCategory input[type = text]{
     margin-right: 5%;
     float: right;
@@ -37,16 +54,40 @@
 .addCategory label{
     float: left;
 }
-
-#deleteButton{
-    background-color: lightblue;
-    color: black;
-    width: 100%;
-    line-height: 30px;
-    height: 30px;
-    text-align: center;
-}
-
+ 
 #deleteButton:hover{
     background-color: red;
+}
+
+.cCbuttons{
+    padding: 2%;
+    width: 25%;
+    color: white;
+    background-color: #6d69e3;
+}
+
+.cCbuttons:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #678aff;
+    transition-duration: 0.4s;
+}
+
+#btn1{
+    float: left;
+    margin-left: 20%;
+    margin-bottom: 2%;
+}
+
+#btn2{
+    float: right;
+    margin-right: 18%;
+    margin-bottom: 2%;
+}
+
+#buttonSet{
+    margin: 5% 15% 5% 15%;
+    background-color: rgba(0,0,0,0.7);
+    padding-top: 5%;
+    padding-bottom: 9%;
 }

@@ -13,7 +13,9 @@ if (isset($_POST['usr_email']) and isset($_POST['usr_password'])) {
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             $id = $row["user_id"];
+            $isAdmin = $row['is_admin'];
             $_SESSION['id'] = $id;
+            $_SESSION['isAdmin'] = $isAdmin;
             $user = $row["firstName"];
             $_SESSION['username'] = $user;
         }

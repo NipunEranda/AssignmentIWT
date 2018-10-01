@@ -37,17 +37,17 @@
                 <div class = "about_left left">
                     <center>
                         <div id = "img_container">
-                            <img src = "images/company.jpg" width="100%" onclick="document.getElementById('au1').style.display = 'block'">
+                            <img src = "images/company.jpg" width="100%" onclick="document.getElementById('company').style.display = 'block'">
                             <br/><br/>
                             <label>Company info</label>
                         </div>
 
-                        <div id = "au1" class = "modal">
+                        <div id = "company" class = "modal">
 
                             <div class="modal-content animate">
 
                                 <div class="top">
-                                    <span onclick="document.getElementById('au1').style.display = 'none'" class="close" title="Close Modal">&times;</span>
+                                    <span onclick="document.getElementById('company').style.display = 'none'" class="close" title="Close Modal">&times;</span>
                                 </div>
 
                                 <div class="container">
@@ -70,17 +70,17 @@
 
                     <center>
                         <div id = "img_container">                          
-                            <img src = "images/customercare.jpg" width="100%" onclick="document.getElementById('au2').style.display = 'block'">
+                            <img src = "images/customercare.jpg" width="100%" onclick="document.getElementById('care').style.display = 'block'">
                             <br/><br/>
                             <label>Customer Care</label>
                         </div>
 
-                        <div id = "au2" class = "modal">
+                        <div id = "care" class = "modal">
 
                             <div class="modal-content animate">
 
                                 <div class="top">
-                                    <span onclick="document.getElementById('au2').style.display = 'none'" class="close" title="Close Modal">&times;</span>
+                                    <span onclick="document.getElementById('care').style.display = 'none'" class="close" title="Close Modal">&times;</span>
                                 </div>
 
                                 <div class="container">
@@ -93,6 +93,9 @@
                                     </div><br/>
                                     <div class = "cCbuttons" onclick="document.getElementById('Userdetails').style.display = 'block'">
                                         Changing your contact details
+                                    </div><br/>
+                                    <div class = "cCbuttons" onclick = "location.href = 'services.html'">
+                                        Services
                                     </div><br/>
                                 </div>
 

@@ -1,46 +1,83 @@
-<!DOCTYPE html>
-<?php include 'components/header.php'; ?>
-<?php include 'components/logincheck.php';?>
+<!doctype html>
 <html>
-    <head>
-        <title>Store Pickup</title>
-        <link rel = "stylesheet" href = "css/styles.css">
-        <link rel = "stylesheet" href = "css/storePickup.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style src = "js/storepickup.js"></style>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body background = "images/backgrounds/background5.jpg">
-        
-        <div id="maincontainer">
-            <!--BODY STARTS-->
+	<head>
+		<meta charset = "utf-8">
+		<title> Store PickUP </title>
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script>    
+    function validateForms() 
+	{
+    var a = document.forms["login"]["un"].value;
+    if (a == "")
+	{
+        alert("Name must be filled out");
+        return false;
+    }
+	var b = document.forms["login"]["pw"].value;
+    if (b == "")
+	{
+        alert("Password must be filled out");
+        return false;
+    }
+ }
+</script>
 
-            <div class = "frame">
-                <center><label class = "topic_form">STORE PICKUP</label></center><br/><br/>
-                <form action = "" method = "POST" onsubmit="validate()">
-                    <ul style = "list-style-type: none;">
-                        <li><label>Customer name</label><input type = "text" name = "name" id = "Cname">
-                            <select style = "float: right; height: 25px; margin-right: 30px;">
-                                <option>Mr.</option>
-                                <option>Mrs.</option>
-                                <option>Miss</option>
-                            </select>
-                        </li><br/>
-                        <li><label>Address</label><input type = "text" name = "address1" id = "Address1"><label class = "label_position">(Line 1)</label></li><br/>
-                        <li><input type = "text" name = "address2" id = "Address2"><label class = "label_position">(Line 2)</label></li><br/><br/>
-                        <li><input type = "text" name = "city" id = "city"><label class = "label_position">(City)</label></li><br/><br/>
-                        <li><input type = "text" name = "state" id = "state"><label class = "label_position">(State)</label></li><br/><br/>
-                        <li><input type = "text" name = "postalCode" id = "postalCode"><label class = "label_position">(Postal Code)</label></li><br/><br/>
-                        <li><label>E-mail Address</label><input type = "text" name = "e-mail" id = "email"></li><br/>
-                        <li><label>Item Code</label><input type = "text" name = "itemCode" id = "itemCode"></li><br/>
-                        <li><input type = "submit" name = "order" value = "Order" style = "float: right; width: 15%;height: 35px; border-radius: 10px;"></li>
-                    </ul>
-                </form>
-            </div>
-            <!--Body Ends-->
-        </div>
-
-        <?php include_once 'components/footer.php'; ?>
-        
-    </body>
+	</head>
+	
+	
+	<body style ="background-color:#808080;">
+		
+			
+		<div class="box">
+			<h2> Store PickUP </h2>
+			<form name="storepickup" onSubmit="return validateForms()"action="pick_query.php" method="post">
+				<div class="inputBox">
+					<input type="text" name="name" required="">
+					<label> Customer Name  </label>
+				</div>
+				
+				<div class="inputBox">
+					<input type="text" name="nic" required="">
+					<label>NIC Number</label>
+				</div>
+				
+				<div class="inputBox">
+					<input type="text" name="address" required="">
+					<label> Address</label>
+				</div>
+				
+				<div class="inputBox">
+            <div class="tab-content">
+              <div class="tab-pane" id="accountLogin" role="tabpanel">
+			  
+                <form class="modal-account__form js-account-form" id="formLogin" action="#" method="POST" data-toggle="validator">
+                  <div class="form-group">
+                    <input class="form-control form-control-sm" type="email" name="user_email" placeholder="E-mail address" required="required"/>
+                    <div class="help-block with-errors"></div>
+                  </div>
+				  
+				  <div class="inputBox">
+					<input type="text" name="itemcode" required="">
+					<label> Item Code #</label>
+					
+					<div class="inputBox">
+					<input type="date" name="datetime" required="">
+					<label></label>
+				</div>
+				</div>
+				  
+				
+              </div>
+            
+				
+				
+				
+				
+				<input type="submit" name="" value="Complete Order " >
+			</form>
+		</div>
+	
+	</body>
+	
 </html>

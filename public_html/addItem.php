@@ -86,8 +86,8 @@ $user = $_SESSION['id'];
                         <h2>Add Item</h2>
                         <div class ="addCategory">
                             <form action = "" method = "post">
-                                <label>Input item id :   </label><input type = "text" name = "newItemId"><br/><br/>
-                                <label>Input category id :   </label><input type = "text" name = "categoryId"><br/><br/>
+                                <label>Input item id :   </label><input type = "text" name = "newItemId"/><br/><br/>
+                                <label>Input category id :   </label><input type = "text" name = "categoryId"/><br/><br/>
                                 <label>Input item Name :   </label><input type = "text" name = "newItemName"/><br/><br/>
                                 <label>Input item Price :   </label><input type = "text" name = "newItemPrice"/><br/><br/>
                                 <label>Input item Quantity :   </label><input type = "text" name = "newItemQuantity"/><br/><br/>

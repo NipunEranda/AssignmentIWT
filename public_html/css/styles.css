@@ -4,6 +4,9 @@ html, body {
     background-size: cover;
 }
 
+#dash{
+    display: none;
+}
 
 #maincontainer{
     margin-top: 100px;
@@ -81,7 +84,7 @@ html, body {
     background:rgba(0,0,0,.8);
 }
 
-#header_li {
+.header_li {
     font-weight: bold;
     font-size: 17px;
     width: 130px;
@@ -89,17 +92,13 @@ html, body {
     /*  border-right : 1px solid #bbb;*/
 }
 
-#header_li a {
+.header_li a {
     padding: 12px;
     display : block;
     color : white;
     text-align : center;
     padding-left: 1px;
     text-decoration : none;
-}
-
-#header_li a:hover {
-    background-color : red;
 }
 
 .active {
@@ -347,3 +346,4 @@ div a {
     color: black;
     transition-duration: 0.5s;
 }
+
